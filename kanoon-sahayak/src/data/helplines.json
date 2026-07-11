@@ -1,0 +1,14 @@
+{
+  "helplines": [
+    { "name_en": "Police", "name_hi": "पुलिस", "number": "112", "icon": "Shield", "color": "blue" },
+    { "name_en": "Women Helpline", "name_hi": "महिला हेल्पलाइन", "number": "181", "icon": "HeartHandshake", "color": "pink" },
+    { "name_en": "Women Distress", "name_hi": "महिला संकट", "number": "1091", "icon": "HeartHandshake", "color": "rose" },
+    { "name_en": "Cyber Crime", "name_hi": "साइबर अपराध", "number": "1930", "icon": "ShieldAlert", "color": "red" },
+    { "name_en": "Child Helpline", "name_hi": "बाल हेल्पलाइन", "number": "1098", "icon": "Users", "color": "yellow" },
+    { "name_en": "Senior Citizen", "name_hi": "वरिष्ठ नागरिक", "number": "14567", "icon": "User", "color": "teal" },
+    { "name_en": "Consumer Helpline", "name_hi": "उपभोक्ता हेल्पलाइन", "number": "1800-11-4000", "icon": "ShoppingCart", "color": "green" },
+    { "name_en": "NALSA (Free Legal Aid)", "name_hi": "NALSA (निःशुल्क कानूनी सहायता)", "number": "15100", "icon": "Scale", "color": "purple" },
+    { "name_en": "Ambulance", "name_hi": "एम्बुलेंस", "number": "108", "icon": "Stethoscope", "color": "orange" },
+    { "name_en": "Fire", "name_hi": "अग्निशमन", "number": "101", "icon": "Flame", "color": "amber" }
+  ]
+}

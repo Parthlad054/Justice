@@ -1,0 +1,454 @@
+# Kanoon Sahayak (LawEasy India) — Project Documentation
+
+> A simple, bilingual (Hindi + English) legal awareness web app that helps everyday Indian citizens understand their rights, know what to do in common situations, and confidently stand up when someone breaks the rules.
+
+---
+
+## 1. Project Overview
+
+**Goal:** Make Indian law understandable and actionable for the common person — no legal jargon, no confusion. Help people know their rights, follow correct procedure, and push back (legally and calmly) when someone violates their rights or breaks a rule.
+
+**Core Value Proposition:**
+- Learn law in plain Hindi + English
+- Know exactly what to do, step by step
+- Be able to *cite* the correct Act/Section when challenging wrong behavior
+- Access ready-made complaint templates instead of feeling helpless
+
+**Important design principle:** The app informs and empowers — it never encourages confrontation, vigilante action, or unverified accusations. Every "challenge" feature should push the user toward the correct *official* channel (police, consumer forum, RTI, labour office) rather than a direct personal confrontation with strangers.
+
+---
+
+## 2. Tech Stack
+
+| Layer | Choice |
+|---|---|
+| Frontend | React.js + Tailwind CSS |
+| State | useState / useEffect, Context API for language + theme |
+| Data | Static JSON files (no backend initially) |
+| Routing | React Router |
+| PWA | Vite PWA plugin / CRA service worker |
+| Icons | Lucide React |
+| Charts (future) | Recharts (for quiz stats, complaint tracker) |
+| Deployment | Vercel / Netlify (free tier friendly) |
+
+---
+
+## 3. Folder Structure
+
+```
+kanoon-sahayak/
+├── public/
+│   ├── manifest.json
+│   ├── icons/
+│   └── locales/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── LanguageSwitcher.jsx
+│   │   ├── home/
+│   │   │   ├── LawOfTheDay.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   └── CategoryCard.jsx
+│   │   ├── law/
+│   │   │   ├── LawCard.jsx
+│   │   │   ├── LawDetail.jsx
+│   │   │   ├── StepsList.jsx
+│   │   │   └── ShareButton.jsx
+│   │   ├── tools/
+│   │   │   ├── ComplaintGenerator.jsx
+│   │   │   ├── RightsCardGenerator.jsx
+│   │   │   ├── FineCalculator.jsx
+│   │   │   └── AuthorityFinder.jsx
+│   │   └── common/
+│   │       ├── Loader.jsx
+│   │       └── EmptyState.jsx
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   ├── CategoriesPage.jsx
+│   │   ├── CategoryDetailPage.jsx
+│   │   ├── LawDetailPage.jsx
+│   │   ├── SearchResultsPage.jsx
+│   │   ├── ToolsPage.jsx
+│   │   ├── FAQPage.jsx
+│   │   └── AboutPage.jsx
+│   ├── data/
+│   │   ├── laws.json
+│   │   ├── categories.json
+│   │   ├── faqs.json
+│   │   └── helplines.json
+│   ├── context/
+│   │   ├── LanguageContext.jsx
+│   │   └── ThemeContext.jsx
+│   ├── hooks/
+│   │   ├── useSearch.js
+│   │   └── useLocalStorage.js
+│   ├── utils/
+│   │   ├── translate.js
+│   │   └── shareUtils.js
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## 4. JSON Data Format — `laws.json`
+
+```json
+{
+  "laws": [
+    {
+      "id": "traffic-001",
+      "category": "traffic",
+      "title_en": "Driving Without Helmet",
+      "title_hi": "बिना हेलमेट गाड़ी चलाना",
+      "explanation_en": "Riding a two-wheeler without a helmet is illegal in India and puts your life at risk. Police can stop you and issue a challan on the spot or online.",
+      "explanation_hi": "बिना हेलमेट के दोपहिया वाहन चलाना भारत में गैरकानूनी है और आपकी जान को खतरे में डालता है। पुलिस आपको रोककर मौके पर या ऑनलाइन चालान जारी कर सकती है।",
+      "key_rights": [
+        "You have the right to see the police officer's ID card",
+        "You have the right to get a proper receipt for any fine paid",
+        "You cannot be forced to pay cash on the spot if e-challan is used in your state"
+      ],
+      "what_to_do": [
+        "Always carry a helmet — it's for your safety first",
+        "If challaned, ask for a valid receipt",
+        "Check and pay the challan online at parivahan.gov.in",
+        "You can contest a wrongly issued challan in traffic court"
+      ],
+      "act_section": "Motor Vehicles Act, 1988 — Section 129",
+      "penalty": "₹1,000 fine + 3 months license suspension (may vary by state)",
+      "tags": ["helmet", "challan", "traffic", "two wheeler", "bike"]
+    },
+    {
+      "id": "consumer-001",
+      "category": "consumer",
+      "title_en": "Defective Product / Refund Refusal",
+      "title_hi": "खराब सामान / रिफंड से इनकार",
+      "explanation_en": "If a shop or company sells you a defective product and refuses refund/replacement, you can file a complaint with the Consumer Forum — this is your legal right.",
+      "explanation_hi": "अगर कोई दुकान या कंपनी आपको खराब सामान बेचती है और रिफंड/बदलने से मना करती है, तो आप कंज्यूमर फोरम में शिकायत दर्ज कर सकते हैं — यह आपका कानूनी अधिकार है।",
+      "key_rights": [
+        "Right to refund, replacement, or repair for defective goods",
+        "Right to file a complaint without a lawyer",
+        "Right to compensation for damages caused by defective products"
+      ],
+      "what_to_do": [
+        "Keep the bill/invoice safe",
+        "Send a written complaint to the seller first",
+        "If unresolved in 30 days, file online at consumerhelpline.gov.in or e-daakhil portal",
+        "No court fee for claims under ₹5 lakh"
+      ],
+      "act_section": "Consumer Protection Act, 2019",
+      "penalty": "Compensation as decided by Consumer Forum + possible punitive damages",
+      "tags": ["refund", "defective product", "consumer complaint", "warranty"]
+    },
+    {
+      "id": "police-001",
+      "category": "police",
+      "title_en": "How to File an FIR",
+      "title_hi": "एफआईआर कैसे दर्ज करें",
+      "explanation_en": "An FIR (First Information Report) is a written document police prepare when they receive information about a cognizable offence. Filing one is free and cannot legally be refused.",
+      "explanation_hi": "एफआईआर (प्राथमिकी) एक लिखित दस्तावेज़ है जो पुलिस किसी संज्ञेय अपराध की सूचना मिलने पर तैयार करती है। इसे दर्ज कराना मुफ्त है और कानूनी रूप से मना नहीं किया जा सकता।",
+      "key_rights": [
+        "Police cannot refuse to file an FIR for a cognizable offence",
+        "You get a free copy of the FIR immediately after filing",
+        "You can file a Zero FIR at any police station, regardless of jurisdiction",
+        "If police refuse, you can approach the Superintendent of Police or file online"
+      ],
+      "what_to_do": [
+        "Go to the nearest police station or file online (in states where available)",
+        "Narrate facts clearly and briefly",
+        "Read the FIR before signing to confirm accuracy",
+        "Collect your free copy with FIR number",
+        "If refused, send a written complaint to the SP under Section 154(3) CrPC"
+      ],
+      "act_section": "Section 154, Code of Criminal Procedure (CrPC)",
+      "penalty": "N/A — this is a right, not an offence",
+      "tags": ["FIR", "police complaint", "zero fir", "crime report"]
+    },
+    {
+      "id": "women-001",
+      "category": "women-safety",
+      "title_en": "Protection from Domestic Violence",
+      "title_hi": "घरेलू हिंसा से सुरक्षा",
+      "explanation_en": "Women facing physical, emotional, sexual, or economic abuse at home have legal protection and can seek protection orders, residence rights, and maintenance.",
+      "explanation_hi": "घर में शारीरिक, मानसिक, यौन या आर्थिक शोषण झेल रही महिलाओं को कानूनी सुरक्षा प्राप्त है और वे सुरक्षा आदेश, निवास अधिकार और गुजारा भत्ता मांग सकती हैं।",
+      "key_rights": [
+        "Right to reside in the shared household",
+        "Right to seek a Protection Order against the abuser",
+        "Right to free legal aid and a Protection Officer's assistance",
+        "Right to monetary relief/compensation"
+      ],
+      "what_to_do": [
+        "Call Women's Helpline 181 or 1091 immediately if in danger",
+        "Approach the nearest Protection Officer or NGO",
+        "File a complaint under the Domestic Violence Act at the Magistrate's court",
+        "Preserve evidence — messages, medical reports, witnesses"
+      ],
+      "act_section": "Protection of Women from Domestic Violence Act, 2005",
+      "penalty": "Breach of protection order: up to 1 year imprisonment + fine",
+      "tags": ["domestic violence", "women safety", "abuse", "protection order"]
+    },
+    {
+      "id": "cyber-001",
+      "category": "cyber-crime",
+      "title_en": "Online Financial Fraud",
+      "title_hi": "ऑनलाइन वित्तीय धोखाधड़ी",
+      "explanation_en": "If you lose money through UPI fraud, fake calls, or phishing links, report it immediately — the first hour is critical for recovering funds.",
+      "explanation_hi": "अगर आप यूपीआई धोखाधड़ी, फर्जी कॉल या फिशिंग लिंक के जरिए पैसे गंवाते हैं, तो तुरंत रिपोर्ट करें — पहला घंटा पैसे वापस पाने के लिए सबसे महत्वपूर्ण होता है।",
+      "key_rights": [
+        "Right to report cybercrime free of cost",
+        "Right to have your bank freeze the fraudulent transaction if reported in time",
+        "Right to a formal acknowledgment/complaint number"
+      ],
+      "what_to_do": [
+        "Call the National Cyber Crime Helpline 1930 immediately",
+        "Report online at cybercrime.gov.in",
+        "Inform your bank to block the transaction/card",
+        "Keep screenshots of messages, UPI IDs, and transaction IDs as evidence"
+      ],
+      "act_section": "Information Technology Act, 2000 — Section 66C/66D",
+      "penalty": "Up to 3 years imprisonment + fine up to ₹1 lakh",
+      "tags": ["cyber fraud", "UPI fraud", "online scam", "phishing"]
+    },
+    {
+      "id": "employment-001",
+      "category": "employment",
+      "title_en": "Non-Payment or Delayed Salary",
+      "title_hi": "वेतन न मिलना या देरी से मिलना",
+      "explanation_en": "Employers are legally required to pay wages on time. If your salary is delayed or withheld without valid reason, you can file a complaint with the Labour Commissioner.",
+      "explanation_hi": "नियोक्ताओं के लिए समय पर वेतन देना कानूनी रूप से अनिवार्य है। अगर आपका वेतन बिना उचित कारण के रोका या देरी से दिया जाता है, तो आप श्रम आयुक्त के पास शिकायत दर्ज कर सकते हैं।",
+      "key_rights": [
+        "Right to timely payment of wages (by 7th or 10th of the month depending on company size)",
+        "Right to a written employment contract/appointment letter",
+        "Right to file a complaint without fear of retaliation"
+      ],
+      "what_to_do": [
+        "Send a written reminder/email to your employer first",
+        "Keep salary slips, contracts, and communication as proof",
+        "File a complaint with the local Labour Commissioner's office",
+        "Approach the Labour Court if unresolved"
+      ],
+      "act_section": "Payment of Wages Act, 1936",
+      "penalty": "Fine on employer + directed payment with compensation",
+      "tags": ["salary", "wages", "employer", "labour rights"]
+    },
+    {
+      "id": "rent-001",
+      "category": "rent-property",
+      "title_en": "Landlord Refusing to Return Security Deposit",
+      "title_hi": "मकान मालिक द्वारा सिक्योरिटी डिपॉजिट न लौटाना",
+      "explanation_en": "Tenants have the right to get their security deposit back after vacating, minus genuine deductions for damages — not arbitrary withholding.",
+      "explanation_hi": "किरायेदारों को घर खाली करने के बाद अपनी सिक्योरिटी डिपॉजिट वापस पाने का अधिकार है, केवल वास्तविक नुकसान की कटौती के साथ — मनमाने ढंग से रोकना गलत है।",
+      "key_rights": [
+        "Right to a written rent agreement",
+        "Right to an itemized list of deductions, if any",
+        "Right to approach Rent Authority/Civil Court for recovery"
+      ],
+      "what_to_do": [
+        "Always sign a registered rent agreement mentioning deposit terms",
+        "Take photos/videos of the property condition before moving in and out",
+        "Send a written notice demanding the deposit",
+        "File a case in Rent Court or Consumer Forum if ignored"
+      ],
+      "act_section": "Model Tenancy Act, 2021 (state-adopted) / Transfer of Property Act, 1882",
+      "penalty": "Court can order refund with interest",
+      "tags": ["rent", "security deposit", "landlord", "tenant rights"]
+    },
+    {
+      "id": "marriage-001",
+      "category": "marriage-family",
+      "title_en": "Right to Maintenance After Divorce",
+      "title_hi": "तलाक के बाद गुजारा भत्ता पाने का अधिकार",
+      "explanation_en": "A spouse (usually the wife) unable to support herself financially has the right to claim maintenance from the other spouse during and after divorce proceedings.",
+      "explanation_hi": "आर्थिक रूप से खुद का भरण-पोषण करने में असमर्थ जीवनसाथी (आमतौर पर पत्नी) को तलाक की कार्यवाही के दौरान और बाद में गुजारा भत्ता पाने का अधिकार है।",
+      "key_rights": [
+        "Right to interim maintenance during court proceedings",
+        "Right to permanent alimony post-divorce",
+        "Right to child maintenance if children are involved"
+      ],
+      "what_to_do": [
+        "File an application under Section 125 CrPC or applicable personal law",
+        "Submit income proof of both spouses",
+        "Seek help from a Family Court or legal aid clinic (free for eligible persons)"
+      ],
+      "act_section": "Section 125, CrPC / Hindu Marriage Act, 1955 / Special Marriage Act, 1954",
+      "penalty": "Non-payment can lead to imprisonment up to 1 month",
+      "tags": ["divorce", "maintenance", "alimony", "family law"]
+    },
+    {
+      "id": "traffic-002",
+      "category": "traffic",
+      "title_en": "Wrongly Issued E-Challan",
+      "title_hi": "गलत तरीके से जारी किया गया ई-चालान",
+      "explanation_en": "Sometimes e-challans are issued by mistake (wrong number plate reading, camera error). You have the right to formally contest and get it cancelled.",
+      "explanation_hi": "कभी-कभी ई-चालान गलती से जारी हो जाते हैं (गलत नंबर प्लेट पढ़ना, कैमरा त्रुटि)। आपको इसे औपचारिक रूप से चुनौती देकर रद्द कराने का अधिकार है।",
+      "key_rights": [
+        "Right to dispute an incorrect challan",
+        "Right to see photographic evidence used to issue the challan",
+        "Right to a fair hearing in virtual traffic court"
+      ],
+      "what_to_do": [
+        "Check challan details at echallan.parivahan.gov.in",
+        "Click 'Dispute Challan' / contact the Traffic Police helpline",
+        "Submit proof (RC, photos) showing the error",
+        "Attend virtual court hearing if required"
+      ],
+      "act_section": "Motor Vehicles Act, 1988",
+      "penalty": "N/A — cancellation if proven wrong",
+      "tags": ["e-challan", "traffic fine dispute", "wrong challan"]
+    },
+    {
+      "id": "cyber-002",
+      "category": "cyber-crime",
+      "title_en": "Social Media Harassment / Cyberbullying",
+      "title_hi": "सोशल मीडिया पर उत्पीड़न / साइबरबुलिंग",
+      "explanation_en": "Sending abusive messages, morphed images, or threats online is a punishable offence. You don't have to tolerate it — report and block.",
+      "explanation_hi": "ऑनलाइन अपमानजनक संदेश, छेड़छाड़ की गई तस्वीरें या धमकियां भेजना एक दंडनीय अपराध है। आपको इसे सहन करने की जरूरत नहीं — रिपोर्ट करें और ब्लॉक करें।",
+      "key_rights": [
+        "Right to report and get content taken down by the platform",
+        "Right to file a police complaint / cybercrime report",
+        "Right to anonymity while reporting in sensitive cases"
+      ],
+      "what_to_do": [
+        "Take screenshots as evidence before blocking",
+        "Report on the platform (Instagram/Facebook/X reporting tools)",
+        "File a complaint at cybercrime.gov.in or call 1930",
+        "Approach the nearest Cyber Cell for serious threats"
+      ],
+      "act_section": "IT Act, 2000 — Section 66E / IPC Section 354D (stalking)",
+      "penalty": "Up to 3 years imprisonment + fine",
+      "tags": ["cyberbullying", "harassment", "online abuse", "stalking"]
+    }
+  ]
+}
+```
+
+### `categories.json` (structure)
+```json
+{
+  "categories": [
+    { "id": "traffic", "title_en": "Traffic & Vehicle Laws", "title_hi": "यातायात एवं वाहन कानून", "icon": "car" },
+    { "id": "consumer", "title_en": "Consumer Rights & Complaints", "title_hi": "उपभोक्ता अधिकार एवं शिकायतें", "icon": "shopping-cart" },
+    { "id": "police", "title_en": "Police, FIR & Arrest Rights", "title_hi": "पुलिस, एफआईआर एवं गिरफ्तारी अधिकार", "icon": "shield" },
+    { "id": "women-safety", "title_en": "Women Safety & Domestic Violence", "title_hi": "महिला सुरक्षा एवं घरेलू हिंसा", "icon": "heart-handshake" },
+    { "id": "cyber-crime", "title_en": "Cyber Crime & Online Fraud", "title_hi": "साइबर अपराध एवं ऑनलाइन धोखाधड़ी", "icon": "shield-alert" },
+    { "id": "employment", "title_en": "Employment & Labour Rights", "title_hi": "रोजगार एवं श्रम अधिकार", "icon": "briefcase" },
+    { "id": "rent-property", "title_en": "Rent & Property Disputes", "title_hi": "किराया एवं संपत्ति विवाद", "icon": "home" },
+    { "id": "marriage-family", "title_en": "Marriage & Family Laws", "title_hi": "विवाह एवं पारिवारिक कानून", "icon": "users" }
+  ]
+}
+```
+
+---
+
+## 5. Main Components List
+
+| Component | Purpose |
+|---|---|
+| `Navbar.jsx` | Top nav with logo, search, language switch |
+| `LanguageSwitcher.jsx` | Toggle EN ↔ HI, stores preference in localStorage |
+| `LawOfTheDay.jsx` | Rotating featured law on the homepage |
+| `SearchBar.jsx` | Keyword search across `laws.json` |
+| `CategoryCard.jsx` | Clickable card for each category |
+| `LawCard.jsx` | Compact preview of a law (in lists/search results) |
+| `LawDetail.jsx` | Full detail view — explanation, rights, steps, act/section, penalty |
+| `StepsList.jsx` | Numbered "What Should You Do" steps |
+| `ShareButton.jsx` | Share via WhatsApp/copy link (uses Web Share API) |
+| `ComplaintGenerator.jsx` | Auto-fills a complaint letter template |
+| `RightsCardGenerator.jsx` | Generates a printable "know your rights" card citing the exact Act/Section |
+| `FineCalculator.jsx` | Estimates traffic fine amounts |
+| `AuthorityFinder.jsx` | Directory of nearest police station / consumer forum / labour office (static/manual data initially) |
+| `FAQPage.jsx` | Common Q&A |
+| `AboutPage.jsx` | App mission, disclaimer, credits |
+
+---
+
+## 6. Core Features (Original Spec)
+
+1. **Home Screen** — Law of the Day, Search Bar, Category Cards
+2. **Search** — keyword search (e.g. "traffic challan", "FIR", "rent agreement")
+3. **Categories Page** — 8 sections (Traffic, Consumer, Police/FIR, Women Safety, Cyber Crime, Employment, Rent, Marriage/Family)
+4. **Law Detail View** — title, bilingual explanation, key rights, step-by-step action, Act/Section, penalty, share button
+5. **FAQ Page**
+6. **About Page**
+7. **Language Switcher** (Hindi ↔ English)
+8. **PWA support** — installable, works offline for cached content
+
+---
+
+## 7. New Feature Ideas — "Know Your Rights, Challenge the Wrong" 🚀
+
+These features turn the app from an "information library" into a tool people can actually *use* in the moment.
+
+### A. Empowerment Tools
+1. **Rights Card Generator** — Pick a situation (e.g. "traffic stop", "landlord dispute"), and the app generates a shareable/printable card stating: *"Under [Act/Section], I have the right to ___."* Great for showing calmly to the other party.
+2. **Complaint Letter Generator** — Auto-fills templates (consumer complaint, RTI application, labour complaint, police complaint) with the user's details — download as PDF or copy text.
+3. **Fine/Penalty Calculator** — Enter violation type → see the legal fine range, so users know if they're being overcharged.
+4. **"What To Say" Scripts** — Short, polite scripts for common confrontations (e.g., "How to respond if a police officer asks for a bribe" or "How to respond if a shopkeeper refuses a bill").
+
+### B. Reporting & Escalation
+5. **Nearest Authority Finder** — Directory of local police stations, consumer forums, labour offices, women's helplines, cyber cells (state-wise, manually curated JSON to start).
+6. **Escalation Ladder Guide** — For each law topic, show a visual "if step 1 fails, do step 2" flow (e.g., Seller → Consumer Forum → State Commission → National Commission).
+7. **Helpline Directory** — One-tap-call list of key national helplines (Police 112, Women 181, Cyber Crime 1930, Child 1098, Senior Citizen 14567).
+
+### C. Learning & Engagement
+8. **Daily Law Quiz** — Gamified 3-question quiz to build legal literacy, with streaks/badges.
+9. **"Law of the Day" Push Notification** — Keeps users engaged (via PWA notifications).
+10. **Real-Life Case Stories** — Short, anonymized story format: "Ramesh's landlord refused deposit — here's what he did and won."
+11. **Community Q&A (Moderated)** — Users post situations, verified volunteers/law students answer (needs moderation to avoid misinformation).
+
+### D. Trust & Safety Features
+12. **Content Verification Badge** — Mark each law entry as "Reviewed by [volunteer/law student name]" with last-updated date, to build trust.
+13. **Clear Disclaimers** — Every page reminds: *"This is general information, not legal advice. For serious matters, consult a lawyer or free legal aid (NALSA)."*
+14. **Free Legal Aid Directory** — Link to District Legal Services Authority (DLSA) contacts for those who can't afford lawyers.
+15. **Anti-Misuse Guardrails** — No feature should let users publicly "name and shame" individuals — always route to official reporting channels to avoid defamation/misuse.
+
+### E. Accessibility & Reach
+16. **Voice Search / Voice Explanation** — For low-literacy users, add text-to-speech in Hindi/English.
+17. **Regional Language Expansion** — Marathi, Tamil, Telugu, Bengali, etc. (Phase 2).
+18. **Offline-First PWA** — Cache key laws so it works with poor connectivity.
+19. **WhatsApp Share Templates** — One-tap share of any law summary to WhatsApp (very popular in India for spreading awareness).
+20. **Simple Illustrations/Icons** per law card — visual recall for non-readers.
+
+### F. Future / Phase 3 Ideas
+21. **AI Chat Assistant** ("Ask Kanoon Sahayak") — Answers simple law questions using the JSON data as a knowledge base (with a strong "not legal advice" disclaimer).
+22. **Document Locker** — Securely store personal documents (Aadhaar, rent agreement, FIR copy) — would need backend + encryption (later phase).
+23. **Lawyer Connect** — Directory of verified pro-bono/affordable lawyers by city (careful vetting required).
+24. **Case Tracker Integration** — Link out to eCourts India / Consumer Forum tracking portals by case number.
+25. **Community Impact Dashboard** — Aggregate, anonymized stats like "12,000 people learned their rent rights this month" to show social impact.
+
+---
+
+## 8. Suggested Build Roadmap
+
+| Phase | Scope |
+|---|---|
+| **Phase 1 (MVP)** | Home, Search, Categories, Law Detail, Language Switch, JSON data (20-30 laws), Share button, About/FAQ, PWA basics |
+| **Phase 2** | Rights Card Generator, Complaint Generator, Fine Calculator, Helpline Directory, Daily Quiz |
+| **Phase 3** | Community Q&A, Voice support, Regional languages, AI Assistant, Authority Finder with maps |
+| **Phase 4** | Backend migration (Node/Express or Firebase), user accounts, Document Locker, Lawyer Connect |
+
+---
+
+## 9. Important Disclaimer to Include in the App
+
+> "Kanoon Sahayak provides general legal information in simple language to help you understand your rights. It is **not a substitute for professional legal advice**. For serious legal matters, please consult a licensed lawyer or contact your nearest District Legal Services Authority (DLSA) for free legal aid."
+
+This protects users from acting purely on the app and protects the project from liability.
+
+
+***** do not contain law*****
+Civil laws (property disputes, contracts, family disputes)
+Company law
+Labour law
+Tax laws (GST, Income Tax)
+Environmental law
+Consumer protection law
+Cyber law (covered only where relevant to IPC)
+Intellectual property law
+Banking law

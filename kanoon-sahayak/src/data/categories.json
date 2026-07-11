@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "id": "traffic",
+      "title_en": "Traffic & Vehicle Laws",
+      "title_hi": "यातायात एवं वाहन कानून",
+      "icon": "Car",
+      "color": "orange",
+      "description_en": "Challans, license rules, traffic violations, and your rights at checkpoints.",
+      "description_hi": "चालान, लाइसेंस नियम, यातायात उल्लंघन और चेकपॉइंट पर आपके अधिकार।"
+    },
+    {
+      "id": "consumer",
+      "title_en": "Consumer Rights & Complaints",
+      "title_hi": "उपभोक्ता अधिकार एवं शिकायतें",
+      "icon": "ShoppingCart",
+      "color": "green",
+      "description_en": "Defective products, refund refusals, MRP violations, and consumer forum.",
+      "description_hi": "खराब उत्पाद, रिफंड से इनकार, MRP उल्लंघन और उपभोक्ता फोरम।"
+    },
+    {
+      "id": "police",
+      "title_en": "Police, FIR & Arrest Rights",
+      "title_hi": "पुलिस, एफआईआर एवं गिरफ्तारी अधिकार",
+      "icon": "Shield",
+      "color": "blue",
+      "description_en": "How to file an FIR, your rights when arrested, and dealing with police.",
+      "description_hi": "एफआईआर कैसे दर्ज करें, गिरफ्तारी पर अधिकार और पुलिस से व्यवहार।"
+    },
+    {
+      "id": "women-safety",
+      "title_en": "Women Safety & Rights",
+      "title_hi": "महिला सुरक्षा एवं अधिकार",
+      "icon": "HeartHandshake",
+      "color": "pink",
+      "description_en": "Domestic violence, workplace harassment, and women's legal protections.",
+      "description_hi": "घरेलू हिंसा, कार्यस्थल उत्पीड़न और महिलाओं की कानूनी सुरक्षाएं।"
+    },
+    {
+      "id": "cyber-crime",
+      "title_en": "Cyber Crime & Online Fraud",
+      "title_hi": "साइबर अपराध एवं ऑनलाइन धोखाधड़ी",
+      "icon": "ShieldAlert",
+      "color": "red",
+      "description_en": "UPI fraud, cyberbullying, online scams, and how to report them.",
+      "description_hi": "UPI धोखाधड़ी, साइबरबुलिंग, ऑनलाइन घोटाले और उन्हें कैसे रिपोर्ट करें।"
+    },
+    {
+      "id": "employment",
+      "title_en": "Employment & Labour Rights",
+      "title_hi": "रोजगार एवं श्रम अधिकार",
+      "icon": "Briefcase",
+      "color": "purple",
+      "description_en": "Salary disputes, wrongful termination, and workplace rights.",
+      "description_hi": "वेतन विवाद, गलत बर्खास्तगी और कार्यस्थल अधिकार।"
+    },
+    {
+      "id": "rent-property",
+      "title_en": "Rent & Property Disputes",
+      "title_hi": "किराया एवं संपत्ति विवाद",
+      "icon": "Home",
+      "color": "teal",
+      "description_en": "Security deposit, illegal eviction, and tenant rights.",
+      "description_hi": "सिक्योरिटी डिपॉजिट, अवैध बेदखली और किरायेदार अधिकार।"
+    },
+    {
+      "id": "marriage-family",
+      "title_en": "Marriage & Family Laws",
+      "title_hi": "विवाह एवं पारिवारिक कानून",
+      "icon": "Users",
+      "color": "yellow",
+      "description_en": "Maintenance, divorce rights, custody, and family court procedures.",
+      "description_hi": "भरण-पोषण, तलाक अधिकार, हिरासत और पारिवारिक न्यायालय प्रक्रिया।"
+    }
+  ]
+}

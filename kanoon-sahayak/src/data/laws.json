@@ -1,0 +1,548 @@
+{
+  "laws": [
+    {
+      "id": "traffic-001",
+      "category": "traffic",
+      "title_en": "Driving Without Helmet",
+      "title_hi": "बिना हेलमेट गाड़ी चलाना",
+      "explanation_en": "Riding a two-wheeler without a helmet is illegal in India and puts your life at risk. Police can stop you and issue a challan on the spot or online.",
+      "explanation_hi": "बिना हेलमेट के दोपहिया वाहन चलाना भारत में गैरकानूनी है और आपकी जान को खतरे में डालता है। पुलिस आपको रोककर मौके पर या ऑनलाइन चालान जारी कर सकती है।",
+      "key_rights": [
+        "You have the right to see the police officer's ID card",
+        "You have the right to get a proper receipt for any fine paid",
+        "You cannot be forced to pay cash on the spot if e-challan is used in your state"
+      ],
+      "key_rights_hi": [
+        "आपको पुलिस अधिकारी का आईडी कार्ड देखने का अधिकार है",
+        "भुगतान किए गए किसी भी जुर्माने के लिए उचित रसीद पाने का अधिकार है",
+        "अगर आपके राज्य में ई-चालान का उपयोग होता है तो आपको मौके पर नकद भुगतान करने के लिए मजबूर नहीं किया जा सकता"
+      ],
+      "what_to_do": [
+        "Always carry a helmet — it's for your safety first",
+        "If challaned, ask for a valid receipt",
+        "Check and pay the challan online at parivahan.gov.in",
+        "You can contest a wrongly issued challan in traffic court"
+      ],
+      "what_to_do_hi": [
+        "हमेशा हेलमेट रखें — यह पहले आपकी सुरक्षा के लिए है",
+        "चालान होने पर वैध रसीद मांगें",
+        "parivahan.gov.in पर ऑनलाइन चालान जांचें और भुगतान करें",
+        "गलत तरीके से जारी चालान को ट्रैफिक कोर्ट में चुनौती दे सकते हैं"
+      ],
+      "act_section": "Motor Vehicles Act, 1988 — Section 129",
+      "penalty": "₹1,000 fine + 3 months license suspension (may vary by state)",
+      "tags": ["helmet", "challan", "traffic", "two wheeler", "bike"]
+    },
+    {
+      "id": "traffic-002",
+      "category": "traffic",
+      "title_en": "Wrongly Issued E-Challan",
+      "title_hi": "गलत तरीके से जारी किया गया ई-चालान",
+      "explanation_en": "Sometimes e-challans are issued by mistake — wrong number plate reading, camera error, or someone else's vehicle. You have the right to formally contest and get it cancelled.",
+      "explanation_hi": "कभी-कभी ई-चालान गलती से जारी हो जाते हैं — गलत नंबर प्लेट पढ़ना, कैमरा त्रुटि, या किसी और के वाहन का। आपको इसे औपचारिक रूप से चुनौती देकर रद्द कराने का अधिकार है।",
+      "key_rights": [
+        "Right to dispute an incorrect challan",
+        "Right to see photographic evidence used to issue the challan",
+        "Right to a fair hearing in virtual traffic court"
+      ],
+      "key_rights_hi": [
+        "गलत चालान को विवादित करने का अधिकार",
+        "चालान जारी करने के लिए उपयोग किए गए फोटोग्राफिक साक्ष्य देखने का अधिकार",
+        "वर्चुअल ट्रैफिक कोर्ट में उचित सुनवाई का अधिकार"
+      ],
+      "what_to_do": [
+        "Check challan details at echallan.parivahan.gov.in",
+        "Click 'Dispute Challan' or contact the Traffic Police helpline",
+        "Submit proof (RC, photos) showing the error",
+        "Attend virtual court hearing if required"
+      ],
+      "what_to_do_hi": [
+        "echallan.parivahan.gov.in पर चालान विवरण जांचें",
+        "'Dispute Challan' पर क्लिक करें या ट्रैफिक पुलिस हेल्पलाइन से संपर्क करें",
+        "त्रुटि दिखाने वाले प्रमाण (RC, फोटो) जमा करें",
+        "यदि आवश्यक हो तो वर्चुअल कोर्ट सुनवाई में उपस्थित हों"
+      ],
+      "act_section": "Motor Vehicles Act, 1988",
+      "penalty": "N/A — cancellation if proven wrong",
+      "tags": ["e-challan", "traffic fine dispute", "wrong challan", "parivahan"]
+    },
+    {
+      "id": "traffic-003",
+      "category": "traffic",
+      "title_en": "Drunk Driving (DUI)",
+      "title_hi": "शराब पीकर गाड़ी चलाना",
+      "explanation_en": "Driving under the influence of alcohol is a serious offence in India. Blood Alcohol Content (BAC) above 30mg per 100ml of blood is illegal and can lead to arrest.",
+      "explanation_hi": "भारत में शराब के प्रभाव में गाड़ी चलाना एक गंभीर अपराध है। 100ml रक्त में 30mg से अधिक Blood Alcohol Content (BAC) गैरकानूनी है और गिरफ्तारी हो सकती है।",
+      "key_rights": [
+        "Right to a breath analyser test — not arbitrary detention",
+        "Right to get a receipt for any fine paid on the spot",
+        "Right to know the charges if arrested"
+      ],
+      "key_rights_hi": [
+        "ब्रेथ एनालाइजर टेस्ट का अधिकार — मनमाना हिरासत नहीं",
+        "मौके पर भुगतान किए गए जुर्माने की रसीद पाने का अधिकार",
+        "गिरफ्तारी पर आरोप जानने का अधिकार"
+      ],
+      "what_to_do": [
+        "Do not drink and drive — arrange a designated driver or cab",
+        "If tested, comply with breath analyser — refusal is also an offence",
+        "Demand receipt for any fine",
+        "If wrongly detained, contact a lawyer or family immediately"
+      ],
+      "what_to_do_hi": [
+        "शराब पीकर गाड़ी न चलाएं — ड्राइवर या कैब की व्यवस्था करें",
+        "परीक्षण पर ब्रेथ एनालाइजर का पालन करें — मना करना भी अपराध है",
+        "किसी भी जुर्माने के लिए रसीद मांगें",
+        "गलत तरीके से हिरासत में लेने पर तुरंत वकील या परिवार से संपर्क करें"
+      ],
+      "act_section": "Motor Vehicles Act, 1988 — Section 185",
+      "penalty": "First offence: ₹10,000 fine or 6 months imprisonment. Repeat: ₹15,000 or 2 years",
+      "tags": ["drunk driving", "DUI", "alcohol", "traffic challan", "arrest"]
+    },
+    {
+      "id": "consumer-001",
+      "category": "consumer",
+      "title_en": "Defective Product / Refund Refusal",
+      "title_hi": "खराब सामान / रिफंड से इनकार",
+      "explanation_en": "If a shop or company sells you a defective product and refuses refund/replacement, you can file a complaint with the Consumer Forum — this is your legal right.",
+      "explanation_hi": "अगर कोई दुकान या कंपनी आपको खराब सामान बेचती है और रिफंड/बदलने से मना करती है, तो आप कंज्यूमर फोरम में शिकायत दर्ज कर सकते हैं — यह आपका कानूनी अधिकार है।",
+      "key_rights": [
+        "Right to refund, replacement, or repair for defective goods",
+        "Right to file a complaint without a lawyer",
+        "Right to compensation for damages caused by defective products"
+      ],
+      "key_rights_hi": [
+        "खराब सामान के लिए रिफंड, बदलाव या मरम्मत का अधिकार",
+        "बिना वकील के शिकायत दर्ज करने का अधिकार",
+        "खराब उत्पादों से हुए नुकसान के लिए मुआवजे का अधिकार"
+      ],
+      "what_to_do": [
+        "Keep the bill/invoice safe",
+        "Send a written complaint to the seller first",
+        "If unresolved in 30 days, file online at consumerhelpline.gov.in or e-daakhil portal",
+        "No court fee for claims under ₹5 lakh"
+      ],
+      "what_to_do_hi": [
+        "बिल/इनवॉइस सुरक्षित रखें",
+        "पहले विक्रेता को लिखित शिकायत भेजें",
+        "30 दिनों में हल न होने पर consumerhelpline.gov.in या e-daakhil पोर्टल पर ऑनलाइन दर्ज करें",
+        "₹5 लाख से कम के दावों के लिए कोई कोर्ट फीस नहीं"
+      ],
+      "act_section": "Consumer Protection Act, 2019",
+      "penalty": "Compensation as decided by Consumer Forum + possible punitive damages",
+      "tags": ["refund", "defective product", "consumer complaint", "warranty", "e-daakhil"]
+    },
+    {
+      "id": "consumer-002",
+      "category": "consumer",
+      "title_en": "Overcharging / MRP Violation",
+      "title_hi": "MRP से अधिक मूल्य वसूलना",
+      "explanation_en": "No seller can charge more than the Maximum Retail Price (MRP) printed on a product. Charging above MRP is an illegal trade practice.",
+      "explanation_hi": "कोई भी विक्रेता उत्पाद पर छपे अधिकतम खुदरा मूल्य (MRP) से अधिक नहीं वसूल सकता। MRP से अधिक वसूलना एक गैरकानूनी व्यापार प्रथा है।",
+      "key_rights": [
+        "Right to pay only up to MRP — no more",
+        "Right to file a consumer complaint for overcharging",
+        "Right to a proper bill/receipt for every purchase"
+      ],
+      "key_rights_hi": [
+        "केवल MRP तक भुगतान का अधिकार — इससे अधिक नहीं",
+        "अधिक वसूली के लिए उपभोक्ता शिकायत दर्ज करने का अधिकार",
+        "प्रत्येक खरीद के लिए उचित बिल/रसीद का अधिकार"
+      ],
+      "what_to_do": [
+        "Check MRP on the product label before paying",
+        "Demand a bill for every purchase",
+        "If overcharged, report to consumerhelpline.gov.in or call 1800-11-4000",
+        "File a complaint with the State Food & Civil Supplies Department for essential commodities"
+      ],
+      "what_to_do_hi": [
+        "भुगतान से पहले उत्पाद लेबल पर MRP जांचें",
+        "हर खरीद के लिए बिल मांगें",
+        "अधिक वसूली पर consumerhelpline.gov.in पर रिपोर्ट करें या 1800-11-4000 पर कॉल करें",
+        "आवश्यक वस्तुओं के लिए राज्य खाद्य एवं नागरिक आपूर्ति विभाग में शिकायत करें"
+      ],
+      "act_section": "Legal Metrology Act, 2009 / Consumer Protection Act, 2019",
+      "penalty": "Fine up to ₹1 lakh for first offence, ₹3 lakh for repeat offences",
+      "tags": ["MRP", "overcharging", "price", "consumer rights", "bill"]
+    },
+    {
+      "id": "police-001",
+      "category": "police",
+      "title_en": "How to File an FIR",
+      "title_hi": "एफआईआर कैसे दर्ज करें",
+      "explanation_en": "An FIR (First Information Report) is a written document police prepare when they receive information about a cognizable offence. Filing one is free and cannot legally be refused.",
+      "explanation_hi": "एफआईआर (प्राथमिकी) एक लिखित दस्तावेज़ है जो पुलिस किसी संज्ञेय अपराध की सूचना मिलने पर तैयार करती है। इसे दर्ज कराना मुफ्त है और कानूनी रूप से मना नहीं किया जा सकता।",
+      "key_rights": [
+        "Police cannot refuse to file an FIR for a cognizable offence",
+        "You get a free copy of the FIR immediately after filing",
+        "You can file a Zero FIR at any police station, regardless of jurisdiction",
+        "If police refuse, you can approach the Superintendent of Police or file online"
+      ],
+      "key_rights_hi": [
+        "पुलिस संज्ञेय अपराध के लिए एफआईआर दर्ज करने से मना नहीं कर सकती",
+        "दर्ज करने के तुरंत बाद आपको एफआईआर की मुफ्त प्रति मिलती है",
+        "आप क्षेत्राधिकार की परवाह किए बिना किसी भी पुलिस स्टेशन पर जीरो एफआईआर दर्ज कर सकते हैं",
+        "पुलिस मना करे तो आप SP से संपर्क कर सकते हैं या ऑनलाइन दर्ज कर सकते हैं"
+      ],
+      "what_to_do": [
+        "Go to the nearest police station or file online (in states where available)",
+        "Narrate facts clearly and briefly",
+        "Read the FIR before signing to confirm accuracy",
+        "Collect your free copy with FIR number",
+        "If refused, send a written complaint to the SP under Section 154(3) CrPC"
+      ],
+      "what_to_do_hi": [
+        "निकटतम पुलिस स्टेशन जाएं या ऑनलाइन दर्ज करें (जहां उपलब्ध हो)",
+        "तथ्य स्पष्ट और संक्षेप में बताएं",
+        "हस्ताक्षर से पहले एफआईआर पढ़कर सटीकता की पुष्टि करें",
+        "एफआईआर नंबर सहित अपनी मुफ्त प्रति लें",
+        "मना होने पर धारा 154(3) CrPC के तहत SP को लिखित शिकायत भेजें"
+      ],
+      "act_section": "Section 154, Code of Criminal Procedure (CrPC)",
+      "penalty": "N/A — this is a right, not an offence",
+      "tags": ["FIR", "police complaint", "zero fir", "crime report", "CrPC"]
+    },
+    {
+      "id": "police-002",
+      "category": "police",
+      "title_en": "Your Rights When Arrested",
+      "title_hi": "गिरफ्तारी पर आपके अधिकार",
+      "explanation_en": "If you are arrested, you have several constitutional rights that police must respect. Knowing these can protect you from wrongful detention or mistreatment.",
+      "explanation_hi": "यदि आपको गिरफ्तार किया जाता है, तो आपके पास कई संवैधानिक अधिकार हैं जिनका पुलिस को सम्मान करना होगा। इन्हें जानने से आप गलत हिरासत या दुर्व्यवहार से बच सकते हैं।",
+      "key_rights": [
+        "Right to know the grounds of arrest",
+        "Right to inform a friend or family member about your arrest",
+        "Right to consult a lawyer of your choice",
+        "Right to be produced before a magistrate within 24 hours",
+        "Right against self-incrimination (Article 20(3))"
+      ],
+      "key_rights_hi": [
+        "गिरफ्तारी के कारण जानने का अधिकार",
+        "किसी मित्र या परिवार के सदस्य को गिरफ्तारी के बारे में सूचित करने का अधिकार",
+        "अपनी पसंद के वकील से परामर्श का अधिकार",
+        "24 घंटे के भीतर मजिस्ट्रेट के सामने पेश किए जाने का अधिकार",
+        "स्वयं के विरुद्ध साक्ष्य देने से मना करने का अधिकार (अनुच्छेद 20(3))"
+      ],
+      "what_to_do": [
+        "Stay calm — do not resist or argue aggressively",
+        "Ask for the reason for arrest clearly",
+        "Immediately inform a family member or trusted friend",
+        "Ask for a lawyer — free legal aid is available through NALSA",
+        "Do not sign any document without reading or understanding it"
+      ],
+      "what_to_do_hi": [
+        "शांत रहें — आक्रामक तरीके से विरोध या बहस न करें",
+        "गिरफ्तारी का कारण स्पष्ट रूप से पूछें",
+        "तुरंत किसी परिवार के सदस्य या विश्वसनीय मित्र को सूचित करें",
+        "वकील मांगें — NALSA के माध्यम से मुफ्त कानूनी सहायता उपलब्ध है",
+        "बिना पढ़े या समझे किसी दस्तावेज़ पर हस्ताक्षर न करें"
+      ],
+      "act_section": "Article 22, Constitution of India / Section 50, CrPC",
+      "penalty": "N/A — these are fundamental rights",
+      "tags": ["arrest", "fundamental rights", "police", "lawyer", "NALSA", "detention"]
+    },
+    {
+      "id": "women-001",
+      "category": "women-safety",
+      "title_en": "Protection from Domestic Violence",
+      "title_hi": "घरेलू हिंसा से सुरक्षा",
+      "explanation_en": "Women facing physical, emotional, sexual, or economic abuse at home have legal protection and can seek protection orders, residence rights, and maintenance.",
+      "explanation_hi": "घर में शारीरिक, मानसिक, यौन या आर्थिक शोषण झेल रही महिलाओं को कानूनी सुरक्षा प्राप्त है और वे सुरक्षा आदेश, निवास अधिकार और गुजारा भत्ता मांग सकती हैं।",
+      "key_rights": [
+        "Right to reside in the shared household",
+        "Right to seek a Protection Order against the abuser",
+        "Right to free legal aid and a Protection Officer's assistance",
+        "Right to monetary relief/compensation"
+      ],
+      "key_rights_hi": [
+        "साझा घर में रहने का अधिकार",
+        "दुर्व्यवहार करने वाले के खिलाफ सुरक्षा आदेश मांगने का अधिकार",
+        "मुफ्त कानूनी सहायता और Protection Officer की मदद का अधिकार",
+        "मौद्रिक राहत/मुआवजे का अधिकार"
+      ],
+      "what_to_do": [
+        "Call Women's Helpline 181 or 1091 immediately if in danger",
+        "Approach the nearest Protection Officer or NGO",
+        "File a complaint under the Domestic Violence Act at the Magistrate's court",
+        "Preserve evidence — messages, medical reports, witnesses"
+      ],
+      "what_to_do_hi": [
+        "खतरे में होने पर तुरंत महिला हेल्पलाइन 181 या 1091 पर कॉल करें",
+        "निकटतम Protection Officer या NGO से संपर्क करें",
+        "मजिस्ट्रेट की अदालत में घरेलू हिंसा अधिनियम के तहत शिकायत दर्ज करें",
+        "साक्ष्य सुरक्षित रखें — संदेश, चिकित्सा रिपोर्ट, गवाह"
+      ],
+      "act_section": "Protection of Women from Domestic Violence Act, 2005",
+      "penalty": "Breach of protection order: up to 1 year imprisonment + fine",
+      "tags": ["domestic violence", "women safety", "abuse", "protection order", "181"]
+    },
+    {
+      "id": "women-002",
+      "category": "women-safety",
+      "title_en": "Sexual Harassment at Workplace",
+      "title_hi": "कार्यस्थल पर यौन उत्पीड़न",
+      "explanation_en": "Every woman has the right to a safe workplace. Sexual harassment — including unwanted advances, comments, or touching — is illegal. Every organisation with 10+ employees must have an Internal Complaints Committee (ICC).",
+      "explanation_hi": "हर महिला को सुरक्षित कार्यस्थल का अधिकार है। यौन उत्पीड़न — जिसमें अनचाही हरकतें, टिप्पणियां या छूना शामिल है — गैरकानूनी है। 10+ कर्मचारियों वाले हर संगठन में Internal Complaints Committee (ICC) होनी चाहिए।",
+      "key_rights": [
+        "Right to file a complaint with Internal Complaints Committee (ICC)",
+        "Right to a safe and harassment-free workplace",
+        "Right to confidentiality during the inquiry process",
+        "Right to interim relief (transfer, leave) during inquiry"
+      ],
+      "key_rights_hi": [
+        "Internal Complaints Committee (ICC) में शिकायत दर्ज करने का अधिकार",
+        "सुरक्षित और उत्पीड़न-मुक्त कार्यस्थल का अधिकार",
+        "जांच प्रक्रिया के दौरान गोपनीयता का अधिकार",
+        "जांच के दौरान अंतरिम राहत (स्थानांतरण, छुट्टी) का अधिकार"
+      ],
+      "what_to_do": [
+        "Document incidents with date, time, witnesses immediately",
+        "File written complaint with the ICC within 3 months of incident",
+        "If no ICC exists, file with Local Complaints Committee (LCC) at district level",
+        "If employer retaliates, file a separate police complaint"
+      ],
+      "what_to_do_hi": [
+        "तुरंत तारीख, समय, गवाहों के साथ घटनाओं का दस्तावेजीकरण करें",
+        "घटना के 3 महीने के भीतर ICC को लिखित शिकायत दर्ज करें",
+        "ICC न होने पर जिला स्तर पर Local Complaints Committee (LCC) में दर्ज करें",
+        "नियोक्ता प्रतिशोध ले तो अलग पुलिस शिकायत दर्ज करें"
+      ],
+      "act_section": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act)",
+      "penalty": "Employer: Fine up to ₹50,000. Repeat: cancellation of licence/registration",
+      "tags": ["sexual harassment", "workplace", "POSH", "ICC", "women rights"]
+    },
+    {
+      "id": "cyber-001",
+      "category": "cyber-crime",
+      "title_en": "Online Financial Fraud (UPI/Bank)",
+      "title_hi": "ऑनलाइन वित्तीय धोखाधड़ी (UPI/बैंक)",
+      "explanation_en": "If you lose money through UPI fraud, fake calls, or phishing links, report it immediately — the first hour is critical for recovering funds.",
+      "explanation_hi": "अगर आप यूपीआई धोखाधड़ी, फर्जी कॉल या फिशिंग लिंक के जरिए पैसे गंवाते हैं, तो तुरंत रिपोर्ट करें — पहला घंटा पैसे वापस पाने के लिए सबसे महत्वपूर्ण होता है।",
+      "key_rights": [
+        "Right to report cybercrime free of cost",
+        "Right to have your bank freeze the fraudulent transaction if reported in time",
+        "Right to a formal acknowledgment/complaint number"
+      ],
+      "key_rights_hi": [
+        "मुफ्त में साइबर अपराध रिपोर्ट करने का अधिकार",
+        "समय पर रिपोर्ट करने पर धोखाधड़ी वाले लेनदेन को बैंक द्वारा फ्रीज करवाने का अधिकार",
+        "औपचारिक स्वीकृति/शिकायत संख्या का अधिकार"
+      ],
+      "what_to_do": [
+        "Call the National Cyber Crime Helpline 1930 immediately",
+        "Report online at cybercrime.gov.in",
+        "Inform your bank to block the transaction/card",
+        "Keep screenshots of messages, UPI IDs, and transaction IDs as evidence"
+      ],
+      "what_to_do_hi": [
+        "तुरंत राष्ट्रीय साइबर अपराध हेल्पलाइन 1930 पर कॉल करें",
+        "cybercrime.gov.in पर ऑनलाइन रिपोर्ट करें",
+        "लेनदेन/कार्ड ब्लॉक करने के लिए अपने बैंक को सूचित करें",
+        "साक्ष्य के रूप में संदेश, UPI ID और लेनदेन ID के स्क्रीनशॉट रखें"
+      ],
+      "act_section": "Information Technology Act, 2000 — Section 66C/66D",
+      "penalty": "Up to 3 years imprisonment + fine up to ₹1 lakh",
+      "tags": ["cyber fraud", "UPI fraud", "online scam", "phishing", "1930"]
+    },
+    {
+      "id": "cyber-002",
+      "category": "cyber-crime",
+      "title_en": "Social Media Harassment / Cyberbullying",
+      "title_hi": "सोशल मीडिया पर उत्पीड़न / साइबरबुलिंग",
+      "explanation_en": "Sending abusive messages, morphed images, or threats online is a punishable offence. You don't have to tolerate it — report and block.",
+      "explanation_hi": "ऑनलाइन अपमानजनक संदेश, छेड़छाड़ की गई तस्वीरें या धमकियां भेजना एक दंडनीय अपराध है। आपको इसे सहन करने की जरूरत नहीं — रिपोर्ट करें और ब्लॉक करें।",
+      "key_rights": [
+        "Right to report and get content taken down by the platform",
+        "Right to file a police complaint / cybercrime report",
+        "Right to anonymity while reporting in sensitive cases"
+      ],
+      "key_rights_hi": [
+        "प्लेटफॉर्म द्वारा सामग्री हटाने की रिपोर्ट करने का अधिकार",
+        "पुलिस शिकायत / साइबर अपराध रिपोर्ट दर्ज करने का अधिकार",
+        "संवेदनशील मामलों में रिपोर्ट करते समय गुमनामी का अधिकार"
+      ],
+      "what_to_do": [
+        "Take screenshots as evidence before blocking",
+        "Report on the platform (Instagram/Facebook/X reporting tools)",
+        "File a complaint at cybercrime.gov.in or call 1930",
+        "Approach the nearest Cyber Cell for serious threats"
+      ],
+      "what_to_do_hi": [
+        "ब्लॉक करने से पहले साक्ष्य के रूप में स्क्रीनशॉट लें",
+        "प्लेटफॉर्म पर रिपोर्ट करें (Instagram/Facebook/X रिपोर्टिंग टूल)",
+        "cybercrime.gov.in पर शिकायत दर्ज करें या 1930 पर कॉल करें",
+        "गंभीर खतरों के लिए निकटतम साइबर सेल से संपर्क करें"
+      ],
+      "act_section": "IT Act, 2000 — Section 66E / IPC Section 354D (stalking)",
+      "penalty": "Up to 3 years imprisonment + fine",
+      "tags": ["cyberbullying", "harassment", "online abuse", "stalking", "social media"]
+    },
+    {
+      "id": "employment-001",
+      "category": "employment",
+      "title_en": "Non-Payment or Delayed Salary",
+      "title_hi": "वेतन न मिलना या देरी से मिलना",
+      "explanation_en": "Employers are legally required to pay wages on time. If your salary is delayed or withheld without valid reason, you can file a complaint with the Labour Commissioner.",
+      "explanation_hi": "नियोक्ताओं के लिए समय पर वेतन देना कानूनी रूप से अनिवार्य है। अगर आपका वेतन बिना उचित कारण के रोका या देरी से दिया जाता है, तो आप श्रम आयुक्त के पास शिकायत दर्ज कर सकते हैं।",
+      "key_rights": [
+        "Right to timely payment of wages (by 7th or 10th of month)",
+        "Right to a written employment contract/appointment letter",
+        "Right to file a complaint without fear of retaliation"
+      ],
+      "key_rights_hi": [
+        "समय पर वेतन भुगतान का अधिकार (महीने की 7वीं या 10वीं तक)",
+        "लिखित रोजगार अनुबंध/नियुक्ति पत्र का अधिकार",
+        "प्रतिशोध के डर के बिना शिकायत दर्ज करने का अधिकार"
+      ],
+      "what_to_do": [
+        "Send a written reminder/email to your employer first",
+        "Keep salary slips, contracts, and communication as proof",
+        "File a complaint with the local Labour Commissioner's office",
+        "Approach the Labour Court if unresolved"
+      ],
+      "what_to_do_hi": [
+        "पहले अपने नियोक्ता को लिखित अनुस्मारक/ईमेल भेजें",
+        "वेतन पर्ची, अनुबंध और संचार को प्रमाण के रूप में रखें",
+        "स्थानीय श्रम आयुक्त के कार्यालय में शिकायत दर्ज करें",
+        "हल न होने पर श्रम न्यायालय से संपर्क करें"
+      ],
+      "act_section": "Payment of Wages Act, 1936",
+      "penalty": "Fine on employer + directed payment with compensation",
+      "tags": ["salary", "wages", "employer", "labour rights", "labour commissioner"]
+    },
+    {
+      "id": "employment-002",
+      "category": "employment",
+      "title_en": "Wrongful Termination",
+      "title_hi": "गलत तरीके से नौकरी से निकालना",
+      "explanation_en": "Employees in India have legal protections against arbitrary dismissal. If you are fired without proper cause or due process, you have the right to challenge it.",
+      "explanation_hi": "भारत में कर्मचारियों को मनमाने बर्खास्तगी के खिलाफ कानूनी सुरक्षा है। यदि आपको उचित कारण या प्रक्रिया के बिना निकाला जाता है, तो आपको इसे चुनौती देने का अधिकार है।",
+      "key_rights": [
+        "Right to a written reason for termination",
+        "Right to notice period or pay in lieu of notice",
+        "Right to gratuity if employed for 5+ years",
+        "Right to challenge termination in Labour Court"
+      ],
+      "key_rights_hi": [
+        "बर्खास्तगी के लिए लिखित कारण का अधिकार",
+        "नोटिस अवधि या नोटिस के बदले वेतन का अधिकार",
+        "5+ साल रोजगार पर ग्रेच्युटी का अधिकार",
+        "श्रम न्यायालय में बर्खास्तगी को चुनौती देने का अधिकार"
+      ],
+      "what_to_do": [
+        "Get the termination letter in writing",
+        "Check your appointment letter for notice period terms",
+        "Claim any unpaid salary, leave encashment, and gratuity",
+        "File a complaint at the Labour Commissioner's office or Industrial Tribunal"
+      ],
+      "what_to_do_hi": [
+        "बर्खास्तगी पत्र लिखित में प्राप्त करें",
+        "नोटिस अवधि की शर्तों के लिए अपना नियुक्ति पत्र जांचें",
+        "कोई भी अवैतनिक वेतन, छुट्टी नकदीकरण और ग्रेच्युटी का दावा करें",
+        "श्रम आयुक्त के कार्यालय या औद्योगिक न्यायाधिकरण में शिकायत दर्ज करें"
+      ],
+      "act_section": "Industrial Disputes Act, 1947 / Payment of Gratuity Act, 1972",
+      "penalty": "Employer liable for back wages, reinstatement, or compensation",
+      "tags": ["termination", "fired", "wrongful dismissal", "gratuity", "labour court"]
+    },
+    {
+      "id": "rent-001",
+      "category": "rent-property",
+      "title_en": "Landlord Refusing to Return Security Deposit",
+      "title_hi": "मकान मालिक द्वारा सिक्योरिटी डिपॉजिट न लौटाना",
+      "explanation_en": "Tenants have the right to get their security deposit back after vacating, minus genuine deductions for damages — not arbitrary withholding.",
+      "explanation_hi": "किरायेदारों को घर खाली करने के बाद अपनी सिक्योरिटी डिपॉजिट वापस पाने का अधिकार है, केवल वास्तविक नुकसान की कटौती के साथ — मनमाने ढंग से रोकना गलत है।",
+      "key_rights": [
+        "Right to a written rent agreement",
+        "Right to an itemized list of deductions, if any",
+        "Right to approach Rent Authority/Civil Court for recovery"
+      ],
+      "key_rights_hi": [
+        "लिखित किराया समझौते का अधिकार",
+        "कटौतियों की मदवार सूची का अधिकार (यदि कोई हो)",
+        "वसूली के लिए किराया प्राधिकरण/सिविल कोर्ट से संपर्क का अधिकार"
+      ],
+      "what_to_do": [
+        "Always sign a registered rent agreement mentioning deposit terms",
+        "Take photos/videos of property condition before moving in and out",
+        "Send a written notice demanding the deposit",
+        "File a case in Rent Court or Consumer Forum if ignored"
+      ],
+      "what_to_do_hi": [
+        "जमा शर्तों का उल्लेख करते हुए हमेशा पंजीकृत किराया समझौते पर हस्ताक्षर करें",
+        "अंदर और बाहर जाने से पहले संपत्ति की स्थिति की फोटो/वीडियो लें",
+        "जमा राशि की मांग करते हुए लिखित नोटिस भेजें",
+        "नजरअंदाज करने पर किराया न्यायालय या उपभोक्ता फोरम में मामला दर्ज करें"
+      ],
+      "act_section": "Model Tenancy Act, 2021 (state-adopted) / Transfer of Property Act, 1882",
+      "penalty": "Court can order refund with interest",
+      "tags": ["rent", "security deposit", "landlord", "tenant rights", "rent agreement"]
+    },
+    {
+      "id": "rent-002",
+      "category": "rent-property",
+      "title_en": "Illegal Eviction by Landlord",
+      "title_hi": "मकान मालिक द्वारा अवैध बेदखली",
+      "explanation_en": "A landlord cannot evict a tenant without proper legal notice and court order. Forceful eviction — changing locks, removing belongings, cutting utilities — is illegal.",
+      "explanation_hi": "मकान मालिक उचित कानूनी नोटिस और अदालत के आदेश के बिना किरायेदार को नहीं निकाल सकता। जबरन बेदखली — ताले बदलना, सामान हटाना, सुविधाएं काटना — गैरकानूनी है।",
+      "key_rights": [
+        "Right to legal notice before eviction",
+        "Right to not be evicted without a court order",
+        "Right to police protection against forceful eviction",
+        "Right to continue living in the rented premises until court order"
+      ],
+      "key_rights_hi": [
+        "बेदखली से पहले कानूनी नोटिस का अधिकार",
+        "अदालत के आदेश के बिना बेदखल न किए जाने का अधिकार",
+        "जबरन बेदखली के खिलाफ पुलिस सुरक्षा का अधिकार",
+        "अदालत के आदेश तक किराये के परिसर में रहने का अधिकार"
+      ],
+      "what_to_do": [
+        "Do not vacate under pressure — ask for written notice",
+        "Call police if landlord forcefully enters or changes locks",
+        "File a complaint in Rent Court / Civil Court",
+        "Apply for stay order to prevent illegal eviction"
+      ],
+      "what_to_do_hi": [
+        "दबाव में घर खाली न करें — लिखित नोटिस मांगें",
+        "मकान मालिक जबरन प्रवेश करे या ताले बदले तो पुलिस बुलाएं",
+        "किराया न्यायालय / सिविल कोर्ट में शिकायत दर्ज करें",
+        "अवैध बेदखली रोकने के लिए स्टे ऑर्डर के लिए आवेदन करें"
+      ],
+      "act_section": "Transfer of Property Act, 1882 / Rent Control Acts (state-specific)",
+      "penalty": "Landlord liable for damages; criminal charges for forceful eviction",
+      "tags": ["eviction", "illegal eviction", "landlord", "tenant", "rent court"]
+    },
+    {
+      "id": "marriage-001",
+      "category": "marriage-family",
+      "title_en": "Right to Maintenance After Divorce",
+      "title_hi": "तलाक के बाद गुजारा भत्ता पाने का अधिकार",
+      "explanation_en": "A spouse unable to support themselves financially has the right to claim maintenance from the other spouse during and after divorce proceedings.",
+      "explanation_hi": "आर्थिक रूप से खुद का भरण-पोषण करने में असमर्थ जीवनसाथी को तलाक की कार्यवाही के दौरान और बाद में गुजारा भत्ता पाने का अधिकार है।",
+      "key_rights": [
+        "Right to interim maintenance during court proceedings",
+        "Right to permanent alimony post-divorce",
+        "Right to child maintenance if children are involved"
+      ],
+      "key_rights_hi": [
+        "अदालती कार्यवाही के दौरान अंतरिम भरण-पोषण का अधिकार",
+        "तलाक के बाद स्थायी गुजारा भत्ते का अधिकार",
+        "बच्चे शामिल होने पर बाल भरण-पोषण का अधिकार"
+      ],
+      "what_to_do": [
+        "File an application under Section 125 CrPC or applicable personal law",
+        "Submit income proof of both spouses",
+        "Seek help from a Family Court or legal aid clinic (free for eligible persons)"
+      ],
+      "what_to_do_hi": [
+        "धारा 125 CrPC या लागू व्यक्तिगत कानून के तहत आवेदन दाखिल करें",
+        "दोनों पति-पत्नी का आय प्रमाण जमा करें",
+        "पारिवारिक न्यायालय या कानूनी सहायता क्लिनिक से मदद लें (पात्र व्यक्तियों के लिए निःशुल्क)"
+      ],
+      "act_section": "Section 125, CrPC / Hindu Marriage Act, 1955 / Special Marriage Act, 1954",
+      "penalty": "Non-payment can lead to imprisonment up to 1 month",
+      "tags": ["divorce", "maintenance", "alimony", "family law", "Section 125"]
+    }
+  ]
+}

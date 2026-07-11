@@ -1,0 +1,60 @@
+{
+  "faqs": [
+    {
+      "id": "faq-001",
+      "question_en": "Is using Kanoon Sahayak the same as getting legal advice?",
+      "question_hi": "क्या Kanoon Sahayak का उपयोग करना कानूनी सलाह लेने जैसा है?",
+      "answer_en": "No. Kanoon Sahayak provides general legal information to help you understand your rights. It is not a substitute for professional legal advice. For serious matters, always consult a licensed lawyer or contact NALSA for free legal aid.",
+      "answer_hi": "नहीं। Kanoon Sahayak सामान्य कानूनी जानकारी प्रदान करता है ताकि आप अपने अधिकारों को समझ सकें। यह पेशेवर कानूनी सलाह का विकल्प नहीं है। गंभीर मामलों में, हमेशा लाइसेंस प्राप्त वकील से परामर्श करें या मुफ्त कानूनी सहायता के लिए NALSA से संपर्क करें।"
+    },
+    {
+      "id": "faq-002",
+      "question_en": "What is a Zero FIR and when can I use it?",
+      "question_hi": "जीरो एफआईआर क्या है और मैं इसका उपयोग कब कर सकता हूं?",
+      "answer_en": "A Zero FIR can be filed at any police station, regardless of where the crime took place. It is then transferred to the relevant jurisdiction. It is especially useful in urgent situations like kidnapping, sexual assault, or serious accidents.",
+      "answer_hi": "जीरो एफआईआर किसी भी पुलिस स्टेशन पर दर्ज की जा सकती है, चाहे अपराध कहीं भी हुआ हो। इसे फिर संबंधित क्षेत्राधिकार में स्थानांतरित किया जाता है। यह अपहरण, यौन हमले या गंभीर दुर्घटनाओं जैसी तत्काल स्थितियों में विशेष रूप से उपयोगी है।"
+    },
+    {
+      "id": "faq-003",
+      "question_en": "Can I file a consumer complaint without a lawyer?",
+      "question_hi": "क्या मैं बिना वकील के उपभोक्ता शिकायत दर्ज कर सकता हूं?",
+      "answer_en": "Yes! The Consumer Protection Act, 2019 allows you to file a complaint yourself without hiring a lawyer. You can do it online at the e-Daakhil portal (edaakhil.nic.in) for claims up to ₹5 lakh with no court fees.",
+      "answer_hi": "हां! उपभोक्ता संरक्षण अधिनियम, 2019 आपको वकील की नियुक्ति किए बिना स्वयं शिकायत दर्ज करने की अनुमति देता है। आप इसे e-Daakhil पोर्टल (edaakhil.nic.in) पर ₹5 लाख तक के दावों के लिए बिना कोर्ट फीस के ऑनलाइन कर सकते हैं।"
+    },
+    {
+      "id": "faq-004",
+      "question_en": "What should I do if police refuse to file my FIR?",
+      "question_hi": "अगर पुलिस मेरी एफआईआर दर्ज करने से मना करे तो मुझे क्या करना चाहिए?",
+      "answer_en": "If police refuse to file your FIR for a cognizable offence, you can: (1) Send a written complaint to the Superintendent of Police, (2) File the complaint online via your state police portal, (3) Approach the Judicial Magistrate directly under Section 156(3) CrPC.",
+      "answer_hi": "अगर पुलिस संज्ञेय अपराध की एफआईआर दर्ज करने से मना करे तो आप: (1) पुलिस अधीक्षक को लिखित शिकायत भेज सकते हैं, (2) राज्य पुलिस पोर्टल के माध्यम से ऑनलाइन शिकायत दर्ज कर सकते हैं, (3) धारा 156(3) CrPC के तहत सीधे न्यायिक मजिस्ट्रेट से संपर्क कर सकते हैं।"
+    },
+    {
+      "id": "faq-005",
+      "question_en": "How long does a Consumer Forum case take?",
+      "question_hi": "उपभोक्ता फोरम का मामला कितने समय में हल होता है?",
+      "answer_en": "By law, Consumer Forums must resolve complaints within 90 days (if no expert opinion required) or 150 days (if expert opinion is needed). However, in practice, cases can take longer due to pendency.",
+      "answer_hi": "कानूनन, उपभोक्ता फोरम को शिकायतों का 90 दिनों (यदि विशेषज्ञ राय आवश्यक नहीं) या 150 दिनों (यदि विशेषज्ञ राय आवश्यक हो) में समाधान करना होगा। हालांकि, व्यवहार में लंबितता के कारण मामले अधिक समय ले सकते हैं।"
+    },
+    {
+      "id": "faq-006",
+      "question_en": "What is NALSA and how can I get free legal help?",
+      "question_hi": "NALSA क्या है और मैं मुफ्त कानूनी सहायता कैसे प्राप्त कर सकता हूं?",
+      "answer_en": "NALSA (National Legal Services Authority) provides free legal services to those who cannot afford lawyers — including women, SC/ST persons, persons with disabilities, and economically weaker sections. Contact your nearest District Legal Services Authority (DLSA) or call NALSA helpline 15100.",
+      "answer_hi": "NALSA (राष्ट्रीय कानूनी सेवा प्राधिकरण) उन लोगों को मुफ्त कानूनी सेवाएं प्रदान करता है जो वकील का खर्च नहीं उठा सकते — जिनमें महिलाएं, SC/ST व्यक्ति, विकलांग व्यक्ति और आर्थिक रूप से कमजोर वर्ग शामिल हैं। अपने निकटतम जिला कानूनी सेवा प्राधिकरण (DLSA) से संपर्क करें या NALSA हेल्पलाइन 15100 पर कॉल करें।"
+    },
+    {
+      "id": "faq-007",
+      "question_en": "Can a landlord increase rent without notice?",
+      "question_hi": "क्या मकान मालिक बिना नोटिस के किराया बढ़ा सकता है?",
+      "answer_en": "No. Rent can only be increased as per the terms of the rent agreement. Under the Model Tenancy Act 2021 (adopted by states), rent can only be revised annually with written notice at least 3 months before the hike.",
+      "answer_hi": "नहीं। किराया केवल किराया समझौते की शर्तों के अनुसार ही बढ़ाया जा सकता है। Model Tenancy Act 2021 (राज्यों द्वारा अपनाया गया) के तहत, किराया केवल बढ़ोतरी से कम से कम 3 महीने पहले लिखित नोटिस के साथ सालाना संशोधित किया जा सकता है।"
+    },
+    {
+      "id": "faq-008",
+      "question_en": "What is the Cyber Crime Helpline number?",
+      "question_hi": "साइबर अपराध हेल्पलाइन नंबर क्या है?",
+      "answer_en": "The National Cyber Crime Helpline number is 1930. You can also file complaints online at cybercrime.gov.in. Time is critical — especially for financial frauds, report within the first hour for best chance of recovery.",
+      "answer_hi": "राष्ट्रीय साइबर अपराध हेल्पलाइन नंबर 1930 है। आप cybercrime.gov.in पर भी ऑनलाइन शिकायत दर्ज कर सकते हैं। समय महत्वपूर्ण है — विशेष रूप से वित्तीय धोखाधड़ी के लिए, वसूली की सबसे अच्छी संभावना के लिए पहले घंटे में रिपोर्ट करें।"
+    }
+  ]
+}
