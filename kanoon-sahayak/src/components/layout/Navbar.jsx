@@ -4,15 +4,17 @@ import { useState } from 'react';
 import { useLang } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import { ui } from '../../utils/translate';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
-  const { lang, toggleLang } = useLang();
+  const { lang } = useLang();
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     { to: '/', label: ui('home', lang) },
     { to: '/categories', label: ui('categories', lang) },
+    { to: '/tools', label: ui('tools', lang) },
     { to: '/faq', label: ui('faq', lang) },
     { to: '/about', label: ui('about', lang) },
   ];
@@ -65,21 +67,7 @@ export default function Navbar() {
           </Link>
 
           {/* Language toggle */}
-          <button
-            onClick={toggleLang}
-            style={{
-              background: 'rgba(255,255,255,0.07)',
-              border: '1px solid rgba(255,255,255,0.12)',
-              borderRadius: 8, padding: '5px 12px',
-              color: '#e2e8f0', cursor: 'pointer',
-              fontSize: 13, fontWeight: 600,
-              transition: 'background 0.2s',
-            }}
-            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.12)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.07)'}
-          >
-            {lang === 'en' ? 'हिंदी' : 'English'}
-          </button>
+          <LanguageSwitcher />
 
           {/* Theme toggle */}
           <button
