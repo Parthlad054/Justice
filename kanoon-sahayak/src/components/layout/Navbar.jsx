@@ -22,9 +22,9 @@ export default function Navbar() {
   return (
     <nav style={{
       position: 'sticky', top: 0, zIndex: 100,
-      background: 'rgba(15,15,26,0.85)',
+      background: 'var(--nav-bg)',
       backdropFilter: 'blur(20px)',
-      borderBottom: '1px solid rgba(255,255,255,0.07)',
+      borderBottom: '1px solid var(--border)',
       padding: '0 24px',
     }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', height: 64, gap: 16 }}>
@@ -38,8 +38,8 @@ export default function Navbar() {
             <Scale size={20} color="white" />
           </div>
           <div>
-            <div style={{ fontWeight: 700, fontSize: 16, color: '#e2e8f0', lineHeight: 1.2 }}>Kanoon Sahayak</div>
-            <div style={{ fontSize: 10, color: '#94a3b8', lineHeight: 1 }}>LawEasy India</div>
+            <div style={{ fontWeight: 700, fontSize: 16, color: 'var(--text)', lineHeight: 1.2 }}>Kanoon Sahayak</div>
+            <div style={{ fontSize: 10, color: 'var(--text-muted)', lineHeight: 1 }}>LawEasy India</div>
           </div>
         </Link>
 
@@ -59,9 +59,9 @@ export default function Navbar() {
 
         {/* Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 'auto' }}>
-          <Link to="/search" style={{ color: '#94a3b8', padding: 8, borderRadius: 8, display: 'flex', alignItems: 'center' }}
-            onMouseEnter={e => e.currentTarget.style.color = '#e2e8f0'}
-            onMouseLeave={e => e.currentTarget.style.color = '#94a3b8'}
+          <Link to="/search" style={{ color: 'var(--text-muted)', padding: 8, borderRadius: 8, display: 'flex', alignItems: 'center' }}
+            onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'}
+            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
           >
             <Search size={18} />
           </Link>
@@ -74,11 +74,11 @@ export default function Navbar() {
             onClick={toggleTheme}
             style={{
               background: 'transparent', border: 'none',
-              color: '#94a3b8', cursor: 'pointer', padding: 8,
+              color: 'var(--text-muted)', cursor: 'pointer', padding: 8,
               borderRadius: 8, display: 'flex', alignItems: 'center',
             }}
-            onMouseEnter={e => e.currentTarget.style.color = '#e2e8f0'}
-            onMouseLeave={e => e.currentTarget.style.color = '#94a3b8'}
+            onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'}
+            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
@@ -89,7 +89,7 @@ export default function Navbar() {
             className="mobile-menu-btn"
             style={{
               display: 'none', background: 'transparent', border: 'none',
-              color: '#e2e8f0', cursor: 'pointer', padding: 8,
+              color: 'var(--text)', cursor: 'pointer', padding: 8,
               borderRadius: 8, alignItems: 'center',
             }}
           >
@@ -101,7 +101,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div style={{
-          padding: '12px 0 20px', borderTop: '1px solid rgba(255,255,255,0.07)',
+          padding: '12px 0 20px', borderTop: '1px solid var(--border)',
           display: 'flex', flexDirection: 'column', gap: 4,
         }}>
           {navLinks.map(link => (

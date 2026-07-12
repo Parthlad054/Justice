@@ -36,7 +36,7 @@ export default function HomePage() {
           {lang === 'en' ? 'Kanoon Sahayak' : 'कानून सहायक'}
         </h1>
 
-        <p style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', color: '#94a3b8', maxWidth: 600, margin: '0 auto 32px', lineHeight: 1.7 }}>
+        <p style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', color: 'var(--text-muted)', maxWidth: 600, margin: '0 auto 32px', lineHeight: 1.7 }}>
           {lang === 'en'
             ? 'Your bilingual guide to Indian law — understand your rights, know what to do, and act through the right official channels.'
             : 'भारतीय कानून के लिए आपकी द्विभाषी मार्गदर्शिका — अपने अधिकार समझें, जानें क्या करना है, और सही सरकारी चैनल से कार्रवाई करें।'}
@@ -69,8 +69,8 @@ export default function HomePage() {
           borderRadius: 16, padding: '16px 20px',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-            <Phone size={16} color="#f87171" />
-            <span style={{ color: '#f87171', fontWeight: 700, fontSize: 14 }}>
+            <Phone size={16} color="#ef4444" />
+            <span style={{ color: '#ef4444', fontWeight: 700, fontSize: 14 }}>
               {ui('helplines', lang)}
             </span>
           </div>
@@ -81,17 +81,17 @@ export default function HomePage() {
                 href={`tel:${h.number}`}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+                  background: 'var(--bg-card)', border: '1px solid var(--border)',
                   borderRadius: 8, padding: '6px 14px',
-                  color: '#e2e8f0', textDecoration: 'none', fontSize: 13, fontWeight: 500,
+                  color: 'var(--text)', textDecoration: 'none', fontSize: 13, fontWeight: 600,
                   transition: 'background 0.2s',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
-                onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+                onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-card-hover)'}
+                onMouseLeave={e => e.currentTarget.style.background = 'var(--bg-card)'}
               >
-                <Phone size={12} color="#4ade80" />
-                <span style={{ color: '#94a3b8', fontSize: 11 }}>{h.name_en}</span>
-                <strong style={{ color: '#4ade80' }}>{h.number}</strong>
+                <Phone size={12} color="#22c55e" />
+                <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>{h.name_en}</span>
+                <strong style={{ color: '#22c55e' }}>{h.number}</strong>
               </a>
             ))}
           </div>
@@ -102,10 +102,10 @@ export default function HomePage() {
       <section>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
           <div>
-            <h2 style={{ fontWeight: 800, fontSize: 22, color: '#e2e8f0', marginBottom: 4 }}>
+            <h2 style={{ fontWeight: 800, fontSize: 22, color: 'var(--text)', marginBottom: 4 }}>
               {lang === 'en' ? 'Browse by Category' : 'श्रेणी अनुसार ब्राउज़ करें'}
             </h2>
-            <p style={{ color: '#64748b', fontSize: 14 }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: 14 }}>
               {lang === 'en' ? '8 areas of Indian law explained simply' : 'भारतीय कानून के 8 क्षेत्र सरलता से समझाए गए'}
             </p>
           </div>

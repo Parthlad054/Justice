@@ -45,8 +45,8 @@ export default function LanguageSwitcher({ variant = 'segmented' }) {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        background: 'rgba(15,15,26,0.65)',
-        border: '1px solid rgba(255,255,255,0.1)',
+        background: 'var(--bg-subtle)',
+        border: '1px solid var(--border)',
         borderRadius: 999,
         padding: 3,
         gap: 2,
@@ -57,7 +57,7 @@ export default function LanguageSwitcher({ variant = 'segmented' }) {
         onClick={() => setLang('en')}
         style={{
           background: lang === 'en' ? 'linear-gradient(135deg, #f97316, #ea580c)' : 'transparent',
-          color: lang === 'en' ? '#ffffff' : '#94a3b8',
+          color: lang === 'en' ? '#ffffff' : 'var(--text-muted)',
           border: 'none',
           borderRadius: 999,
           padding: '4px 11px',
@@ -75,7 +75,7 @@ export default function LanguageSwitcher({ variant = 'segmented' }) {
         onClick={() => setLang('hi')}
         style={{
           background: lang === 'hi' ? 'linear-gradient(135deg, #f97316, #ea580c)' : 'transparent',
-          color: lang === 'hi' ? '#ffffff' : '#94a3b8',
+          color: lang === 'hi' ? '#ffffff' : 'var(--text-muted)',
           border: 'none',
           borderRadius: 999,
           padding: '4px 11px',

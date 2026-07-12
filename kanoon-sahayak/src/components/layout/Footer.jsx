@@ -8,8 +8,8 @@ export default function Footer() {
 
   return (
     <footer style={{
-      background: 'rgba(10,10,20,0.9)',
-      borderTop: '1px solid rgba(255,255,255,0.07)',
+      background: 'var(--bg-card)',
+      borderTop: '1px solid var(--border)',
       padding: '40px 24px 24px',
       marginTop: 'auto',
     }}>
@@ -31,9 +31,9 @@ export default function Footer() {
               }}>
                 <Scale size={16} color="white" />
               </div>
-              <span style={{ fontWeight: 700, color: '#e2e8f0' }}>Kanoon Sahayak</span>
+              <span style={{ fontWeight: 700, color: 'var(--text)' }}>Kanoon Sahayak</span>
             </div>
-            <p style={{ fontSize: 13, color: '#64748b', lineHeight: 1.6 }}>
+            <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.6 }}>
               {lang === 'en'
                 ? 'Making Indian law simple and accessible for every citizen.'
                 : 'हर नागरिक के लिए भारतीय कानून को सरल और सुलभ बनाना।'}
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 style={{ color: '#94a3b8', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
+            <h4 style={{ color: 'var(--text)', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
               {lang === 'en' ? 'Quick Links' : 'त्वरित लिंक'}
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -52,9 +52,9 @@ export default function Footer() {
                 { to: '/faq', label: lang === 'en' ? 'FAQ' : 'सामान्य प्रश्न' },
                 { to: '/about', label: lang === 'en' ? 'About' : 'हमारे बारे में' },
               ].map(link => (
-                <Link key={link.to} to={link.to} style={{ color: '#64748b', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s' }}
+                <Link key={link.to} to={link.to} style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s' }}
                   onMouseEnter={e => e.currentTarget.style.color = '#f97316'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#64748b'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
                 >
                   {link.label}
                 </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Emergency */}
           <div>
-            <h4 style={{ color: '#94a3b8', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
+            <h4 style={{ color: 'var(--text)', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
               {lang === 'en' ? 'Emergency' : 'आपातकाल'}
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -74,9 +74,9 @@ export default function Footer() {
                 { label: lang === 'en' ? 'Cyber Crime' : 'साइबर अपराध', num: '1930' },
                 { label: 'NALSA', num: '15100' },
               ].map(h => (
-                <a key={h.num} href={`tel:${h.num}`} style={{ color: '#64748b', textDecoration: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6 }}
+                <a key={h.num} href={`tel:${h.num}`} style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6 }}
                   onMouseEnter={e => e.currentTarget.style.color = '#4ade80'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#64748b'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
                 >
                   <Phone size={12} />
                   {h.label} — {h.num}
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Legal aid */}
           <div>
-            <h4 style={{ color: '#94a3b8', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
+            <h4 style={{ color: 'var(--text)', fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 12 }}>
               {lang === 'en' ? 'Free Legal Aid' : 'निःशुल्क कानूनी सहायता'}
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -98,9 +98,9 @@ export default function Footer() {
                 { label: 'Parivahan (Challan)', url: 'https://parivahan.gov.in' },
               ].map(link => (
                 <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer"
-                  style={{ color: '#64748b', textDecoration: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6 }}
+                  style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6 }}
                   onMouseEnter={e => e.currentTarget.style.color = '#60a5fa'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#64748b'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
                 >
                   <ExternalLink size={12} /> {link.label}
                 </a>
@@ -109,11 +109,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
-          <p style={{ fontSize: 12, color: '#475569' }}>
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
+          <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>
             © 2024 Kanoon Sahayak — {lang === 'en' ? 'For informational purposes only.' : 'केवल सूचनात्मक उद्देश्यों के लिए।'}
           </p>
-          <p style={{ fontSize: 12, color: '#475569' }}>
+          <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>
             {lang === 'en' ? 'Not a substitute for legal advice.' : 'कानूनी सलाह का विकल्प नहीं।'}
           </p>
         </div>

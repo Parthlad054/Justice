@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Scale, AlertTriangle, CheckCircle2, Gavel, TriangleAlert } from 'lucide-react';
+import { ArrowLeft, Scale, CheckCircle2, Gavel, TriangleAlert } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t, ui } from '../utils/translate';
 import StepsList from '../components/law/StepsList';
@@ -51,11 +51,11 @@ export default function LawDetailPage() {
           </span>
         )}
 
-        <h1 style={{ fontWeight: 800, fontSize: 'clamp(20px, 4vw, 28px)', color: '#e2e8f0', marginBottom: 16, lineHeight: 1.3 }}>
+        <h1 style={{ fontWeight: 800, fontSize: 'clamp(20px, 4vw, 28px)', color: 'var(--text)', marginBottom: 16, lineHeight: 1.3 }}>
           {t(law, 'title', lang)}
         </h1>
 
-        <p style={{ color: '#94a3b8', fontSize: 15, lineHeight: 1.8 }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 15, lineHeight: 1.8 }}>
           {t(law, 'explanation', lang)}
         </p>
       </div>
@@ -68,42 +68,42 @@ export default function LawDetailPage() {
       </div>
 
       {/* Key Rights */}
-      <Section title={ui('key_rights', lang)} icon={<CheckCircle2 size={18} color="#4ade80" />} color="#22c55e" style={{ marginBottom: 20 }}>
+      <Section title={ui('key_rights', lang)} icon={<CheckCircle2 size={18} color="#22c55e" />} style={{ marginBottom: 20 }}>
         <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
           {rights.map((right, i) => (
             <li key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-              <CheckCircle2 size={16} color="#4ade80" style={{ flexShrink: 0, marginTop: 3 }} />
-              <span style={{ color: '#cbd5e1', fontSize: 14, lineHeight: 1.6 }}>{right}</span>
+              <CheckCircle2 size={16} color="#22c55e" style={{ flexShrink: 0, marginTop: 3 }} />
+              <span style={{ color: 'var(--text)', fontSize: 14, lineHeight: 1.6 }}>{right}</span>
             </li>
           ))}
         </ul>
       </Section>
 
       {/* What to do */}
-      <Section title={ui('what_to_do', lang)} icon={<Scale size={18} color="#f97316" />} color="#f97316" style={{ marginBottom: 20 }}>
+      <Section title={ui('what_to_do', lang)} icon={<Scale size={18} color="#f97316" />} style={{ marginBottom: 20 }}>
         <StepsList steps={law.what_to_do} stepsHi={law.what_to_do_hi} />
       </Section>
 
       {/* Act/Penalty */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16, marginBottom: 24 }}>
-        <div style={{ background: 'rgba(59,130,246,0.07)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 14, padding: '16px 20px' }}>
+        <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 14, padding: '16px 20px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-            <Gavel size={16} color="#60a5fa" />
-            <span style={{ color: '#60a5fa', fontWeight: 700, fontSize: 13 }}>{ui('act_section', lang)}</span>
+            <Gavel size={16} color="#3b82f6" />
+            <span style={{ color: '#3b82f6', fontWeight: 700, fontSize: 13 }}>{ui('act_section', lang)}</span>
           </div>
-          <p style={{ color: '#cbd5e1', fontSize: 13, lineHeight: 1.5 }}>{law.act_section}</p>
+          <p style={{ color: 'var(--text)', fontSize: 13, lineHeight: 1.5 }}>{law.act_section}</p>
         </div>
-        <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.2)', borderRadius: 14, padding: '16px 20px' }}>
+        <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 14, padding: '16px 20px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-            <TriangleAlert size={16} color="#f87171" />
-            <span style={{ color: '#f87171', fontWeight: 700, fontSize: 13 }}>{ui('penalty', lang)}</span>
+            <TriangleAlert size={16} color="#ef4444" />
+            <span style={{ color: '#ef4444', fontWeight: 700, fontSize: 13 }}>{ui('penalty', lang)}</span>
           </div>
-          <p style={{ color: '#cbd5e1', fontSize: 13, lineHeight: 1.5 }}>{law.penalty}</p>
+          <p style={{ color: 'var(--text)', fontSize: 13, lineHeight: 1.5 }}>{law.penalty}</p>
         </div>
       </div>
 
       {/* Share */}
-      <Section title={ui('share', lang)} icon={null} color="#64748b">
+      <Section title={ui('share', lang)} icon={null}>
         <ShareButton law={law} />
       </Section>
 
@@ -116,17 +116,19 @@ export default function LawDetailPage() {
   );
 }
 
-function Section({ title, icon, color, children }) {
+function Section({ title, icon, children, style = {} }) {
   return (
     <div style={{
-      background: 'rgba(255,255,255,0.03)',
-      border: '1px solid rgba(255,255,255,0.07)',
+      background: 'var(--bg-card)',
+      border: '1px solid var(--border)',
       borderRadius: 16, padding: '20px 20px', marginBottom: 20,
+      boxShadow: 'var(--card-shadow)',
+      ...style,
     }}>
       {title && (
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
           {icon}
-          <h2 style={{ fontWeight: 700, fontSize: 15, color: '#e2e8f0' }}>{title}</h2>
+          <h2 style={{ fontWeight: 700, fontSize: 15, color: 'var(--text)' }}>{title}</h2>
         </div>
       )}
       {children}

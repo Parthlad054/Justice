@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLang } from '../../context/LanguageContext';
-import { t, ui } from '../../utils/translate';
-import categories from '../../data/categories.json';
+import { t } from '../../utils/translate';
 
 const COLOR_MAP = {
   orange: '#f97316', green: '#22c55e', blue: '#3b82f6',
@@ -20,25 +19,26 @@ export default function CategoryCard({ category }) {
       className="hover-lift"
       style={{
         display: 'block', textDecoration: 'none',
-        background: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.08)',
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border)',
         borderRadius: 16, padding: '20px 20px 16px',
-        transition: 'border-color 0.2s, background 0.2s',
+        transition: 'border-color 0.2s, background 0.2s, box-shadow 0.2s',
         position: 'relative', overflow: 'hidden',
+        boxShadow: 'var(--card-shadow)',
       }}
       onMouseEnter={e => {
-        e.currentTarget.style.borderColor = `${color}50`;
-        e.currentTarget.style.background = 'rgba(255,255,255,0.07)';
+        e.currentTarget.style.borderColor = `${color}60`;
+        e.currentTarget.style.background = 'var(--bg-card-hover)';
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
-        e.currentTarget.style.background = 'rgba(255,255,255,0.04)';
+        e.currentTarget.style.borderColor = 'var(--border)';
+        e.currentTarget.style.background = 'var(--bg-card)';
       }}
     >
       {/* Glow orb */}
       <div style={{
         position: 'absolute', top: -20, right: -20, width: 80, height: 80,
-        borderRadius: '50%', background: color, opacity: 0.08, filter: 'blur(20px)',
+        borderRadius: '50%', background: color, opacity: 0.1, filter: 'blur(20px)',
         pointerEvents: 'none',
       }} />
 
@@ -51,10 +51,10 @@ export default function CategoryCard({ category }) {
         {getCategoryEmoji(category.id)}
       </div>
 
-      <h3 style={{ fontWeight: 700, fontSize: 15, color: '#e2e8f0', marginBottom: 6, lineHeight: 1.3 }}>
+      <h3 style={{ fontWeight: 700, fontSize: 15, color: 'var(--text)', marginBottom: 6, lineHeight: 1.3 }}>
         {t(category, 'title', lang)}
       </h3>
-      <p style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5, marginBottom: 14 }}>
+      <p style={{ fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: 14 }}>
         {t(category, 'description', lang)}
       </p>
 

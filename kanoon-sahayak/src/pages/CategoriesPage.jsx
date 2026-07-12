@@ -7,10 +7,10 @@ export default function CategoriesPage() {
   return (
     <main style={{ maxWidth: 1100, margin: '0 auto', padding: '40px 24px 80px' }}>
       <div style={{ marginBottom: 32 }}>
-        <h1 style={{ fontWeight: 800, fontSize: 28, color: '#e2e8f0', marginBottom: 8 }}>
+        <h1 style={{ fontWeight: 800, fontSize: 28, color: 'var(--text)', marginBottom: 8 }}>
           {lang === 'en' ? 'Browse Categories' : 'श्रेणियां'}
         </h1>
-        <p style={{ color: '#64748b', fontSize: 15 }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 15 }}>
           {lang === 'en'
             ? 'Select a category to explore laws, rights and step-by-step guidance.'
             : 'कानून, अधिकार और चरण-दर-चरण मार्गदर्शन के लिए एक श्रेणी चुनें।'}

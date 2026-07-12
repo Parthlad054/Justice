@@ -2,11 +2,15 @@ import { useState } from 'react';
 import {
   PhoneCall, Shield, HeartHandshake, ShieldAlert, Users, User,
   ShoppingCart, Scale, Stethoscope, Flame, Search, FileText,
-  Calculator, Award, Sparkles, ArrowRight, CheckCircle2,
+  Calculator, Award, Sparkles, ArrowRight, CheckCircle2, MapPin, X
 } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t, ui } from '../utils/translate';
 import helplinesData from '../data/helplines.json';
+import RightsCardGenerator from '../components/tools/RightsCardGenerator';
+import ComplaintGenerator from '../components/tools/ComplaintGenerator';
+import FineCalculator from '../components/tools/FineCalculator';
+import AuthorityFinder from '../components/tools/AuthorityFinder';
 
 const ICON_MAP = {
   Shield: Shield,
@@ -42,8 +46,9 @@ const EMPOWERMENT_TOOLS = [
     desc_hi: 'विवादों के समय दिखाने के लिए सटीक कानूनी धाराओं के साथ एक साझा करने योग्य अधिकार कार्ड बनाएं।',
     icon: Award,
     color: '#f97316',
-    tag_en: 'Phase 2 Tool',
-    tag_hi: 'चरण 2 टूल',
+    tag_en: 'Live Interactive Tool',
+    tag_hi: 'सक्रिय टूल',
+    component: RightsCardGenerator,
   },
   {
     id: 'complaint-gen',
@@ -53,8 +58,9 @@ const EMPOWERMENT_TOOLS = [
     desc_hi: 'उपभोक्ता फोरम, पुलिस स्टेशन और श्रम कार्यालय के लिए तैयार शिकायत पत्र टेम्पलेट स्वतः भरें।',
     icon: FileText,
     color: '#22c55e',
-    tag_en: 'Phase 2 Tool',
-    tag_hi: 'चरण 2 टूल',
+    tag_en: 'Live Interactive Tool',
+    tag_hi: 'सक्रिय टूल',
+    component: ComplaintGenerator,
   },
   {
     id: 'fine-calc',
@@ -64,15 +70,28 @@ const EMPOWERMENT_TOOLS = [
     desc_hi: 'मोटर वाहन अधिनियम के आधिकारिक जुर्माने की जांच करें ताकि आपसे कभी अधिक शुल्क न लिया जाए।',
     icon: Calculator,
     color: '#3b82f6',
-    tag_en: 'Phase 2 Tool',
-    tag_hi: 'चरण 2 टूल',
+    tag_en: 'Live Interactive Tool',
+    tag_hi: 'सक्रिय टूल',
+    component: FineCalculator,
+  },
+  {
+    id: 'authority-finder',
+    title_en: 'Authority & Grievance Finder',
+    title_hi: 'अधिकारी एवं शिकायत केंद्र खोजें',
+    desc_en: 'Find direct portals and emergency helplines for Police, Consumer Forums, Cyber Crime, and Legal Aid.',
+    desc_hi: 'पुलिस, उपभोक्ता फोरम, साइबर अपराध और कानूनी सहायता के लिए सीधे पोर्टल और आपातकालीन नंबर खोजें।',
+    icon: MapPin,
+    color: '#a855f7',
+    tag_en: 'Live Interactive Tool',
+    tag_hi: 'सक्रिय टूल',
+    component: AuthorityFinder,
   },
 ];
 
 export default function ToolsPage() {
   const { lang } = useLang();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedPreview, setSelectedPreview] = useState(null);
+  const [activeTool, setActiveTool] = useState(null);
 
   const filteredHelplines = helplinesData.helplines.filter(item => {
     const q = searchQuery.toLowerCase().trim();
@@ -111,10 +130,10 @@ export default function ToolsPage() {
           <Sparkles size={14} />
           <span>{ui('tools', lang)} &amp; {ui('helplines', lang)}</span>
         </div>
-        <h1 style={{ color: '#e2e8f0', fontSize: 'clamp(26px, 4vw, 36px)', fontWeight: 800, margin: '0 0 10px', lineHeight: 1.2 }}>
+        <h1 style={{ color: 'var(--text)', fontSize: 'clamp(26px, 4vw, 36px)', fontWeight: 800, margin: '0 0 10px', lineHeight: 1.2 }}>
           {ui('tools_title', lang)}
         </h1>
-        <p style={{ color: '#94a3b8', fontSize: 'clamp(14px, 2vw, 16px)', maxWidth: 640, margin: 0, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 'clamp(14px, 2vw, 16px)', maxWidth: 640, margin: 0, lineHeight: 1.6 }}>
           {ui('tools_subtitle', lang)}
         </p>
       </div>
@@ -123,10 +142,10 @@ export default function ToolsPage() {
       <section style={{ marginBottom: 52 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16, marginBottom: 22 }}>
           <div>
-            <h2 style={{ color: '#e2e8f0', fontSize: 22, fontWeight: 700, margin: '0 0 4px' }}>
+            <h2 style={{ color: 'var(--text)', fontSize: 22, fontWeight: 700, margin: '0 0 4px' }}>
               {ui('emergency_helplines', lang)}
             </h2>
-            <p style={{ color: '#94a3b8', fontSize: 13, margin: 0 }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: 13, margin: 0 }}>
               {lang === 'hi' ? 'तुरंत कॉल करने के लिए नंबर पर टैप करें' : 'Tap any number to call immediately'}
             </p>
           </div>
@@ -135,15 +154,15 @@ export default function ToolsPage() {
           <div style={{
             display: 'flex',
             alignItems: 'center',
-            background: 'rgba(255,255,255,0.05)',
-            border: '1px solid rgba(255,255,255,0.12)',
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border-strong)',
             borderRadius: 12,
             padding: '0 14px',
             width: '100%',
             maxWidth: 300,
             height: 42,
           }}>
-            <Search size={16} color="#94a3b8" />
+            <Search size={16} color="var(--text-muted)" />
             <input
               type="text"
               placeholder={ui('search_helplines', lang)}
@@ -152,7 +171,7 @@ export default function ToolsPage() {
               style={{
                 background: 'transparent',
                 border: 'none',
-                color: '#e2e8f0',
+                color: 'var(--text)',
                 outline: 'none',
                 padding: '0 10px',
                 width: '100%',
@@ -164,12 +183,12 @@ export default function ToolsPage() {
 
         {filteredHelplines.length === 0 ? (
           <div style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.07)',
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border)',
             borderRadius: 16,
             padding: 40,
             textAlign: 'center',
-            color: '#94a3b8',
+            color: 'var(--text-muted)',
           }}>
             {ui('no_results', lang)}
           </div>
@@ -190,22 +209,23 @@ export default function ToolsPage() {
                     display: 'flex',
                     alignItems: 'center',
                     gap: 14,
-                    background: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.09)',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
                     borderRadius: 16,
                     padding: '16px 18px',
                     textDecoration: 'none',
                     transition: 'all 0.2s ease',
+                    boxShadow: 'var(--card-shadow)',
                   }}
                   onMouseEnter={e => {
                     e.currentTarget.style.transform = 'translateY(-2px)';
-                    e.currentTarget.style.borderColor = 'rgba(249,115,22,0.4)';
-                    e.currentTarget.style.background = 'rgba(255,255,255,0.07)';
+                    e.currentTarget.style.borderColor = 'rgba(249,115,22,0.5)';
+                    e.currentTarget.style.background = 'var(--bg-card-hover)';
                   }}
                   onMouseLeave={e => {
                     e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.09)';
-                    e.currentTarget.style.background = 'rgba(255,255,255,0.04)';
+                    e.currentTarget.style.borderColor = 'var(--border)';
+                    e.currentTarget.style.background = 'var(--bg-card)';
                   }}
                 >
                   <div style={{
@@ -222,7 +242,7 @@ export default function ToolsPage() {
                     <IconComp size={20} color="#ffffff" />
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ color: '#e2e8f0', fontSize: 14, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    <div style={{ color: 'var(--text)', fontSize: 14, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                       {t(item, 'name', lang)}
                     </div>
                     <div style={{ color: '#f97316', fontSize: 16, fontWeight: 800, fontFamily: 'monospace', letterSpacing: 0.5 }}>
@@ -249,197 +269,178 @@ export default function ToolsPage() {
         )}
       </section>
 
-      {/* Citizen Empowerment Suite (Phase 2 Preview Showcase) */}
+      {/* Citizen Empowerment Suite (Interactive Live Tools) */}
       <section>
         <div style={{ marginBottom: 20 }}>
-          <h2 style={{ color: '#e2e8f0', fontSize: 22, fontWeight: 700, margin: '0 0 4px' }}>
+          <h2 style={{ color: 'var(--text)', fontSize: 22, fontWeight: 700, margin: '0 0 4px' }}>
             {ui('empowerment_tools', lang)}
           </h2>
-          <p style={{ color: '#94a3b8', fontSize: 13, margin: 0 }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: 13, margin: 0 }}>
             {lang === 'hi'
-              ? 'आम नागरिकों के लिए कानूनी अधिकार सुरक्षित करने वाले उपकरण (चरण 2 में आ रहे हैं)'
-              : 'Interactive legal action tools built for everyday citizens (Coming in Phase 2)'}
+              ? 'आम नागरिकों के लिए कानूनी अधिकार एवं शिकायत निवारण टूल'
+              : 'Interactive legal action & grievance tools built for everyday citizens'}
           </p>
         </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))',
-          gap: 20,
-        }}>
-          {EMPOWERMENT_TOOLS.map(tool => {
-            const Icon = tool.icon;
-            return (
-              <div
-                key={tool.id}
-                style={{
-                  background: 'rgba(255,255,255,0.035)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: 20,
-                  padding: 24,
+        {activeTool ? (
+          <div style={{
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border-strong)',
+            borderRadius: 24,
+            padding: 28,
+            boxShadow: 'var(--card-shadow)',
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: 12,
+              borderBottom: '1px solid var(--border)',
+              paddingBottom: 18,
+              marginBottom: 24,
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                <div style={{
+                  width: 44,
+                  height: 44,
+                  borderRadius: 14,
+                  background: `${activeTool.color}18`,
+                  color: activeTool.color,
                   display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  position: 'relative',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                  <activeTool.icon size={22} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: 20, fontWeight: 800, color: 'var(--text)', margin: '0 0 4px' }}>
+                    {lang === 'hi' ? activeTool.title_hi : activeTool.title_en}
+                  </h3>
+                  <p style={{ fontSize: 13, color: 'var(--text-muted)', margin: 0 }}>
+                    {lang === 'hi' ? activeTool.desc_hi : activeTool.desc_en}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                onClick={() => setActiveTool(null)}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text)',
+                  padding: '8px 14px',
+                  borderRadius: 10,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  cursor: 'pointer',
                 }}
               >
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
-                    <div style={{
-                      width: 48,
-                      height: 48,
-                      borderRadius: 14,
-                      background: `${tool.color}18`,
-                      border: `1px solid ${tool.color}40`,
+                <X size={15} />
+                <span>{lang === 'hi' ? 'बंद करें (टूल सूची)' : 'Close Tool'}</span>
+              </button>
+            </div>
+
+            <activeTool.component onClose={() => setActiveTool(null)} />
+          </div>
+        ) : (
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))',
+            gap: 20,
+          }}>
+            {EMPOWERMENT_TOOLS.map(tool => {
+              const Icon = tool.icon;
+              return (
+                <div
+                  key={tool.id}
+                  style={{
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 20,
+                    padding: 24,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    position: 'relative',
+                    boxShadow: 'var(--card-shadow)',
+                  }}
+                >
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', justify: 'space-between', marginBottom: 16 }}>
+                      <div style={{
+                        width: 48,
+                        height: 48,
+                        borderRadius: 14,
+                        background: `${tool.color}18`,
+                        border: `1px solid ${tool.color}40`,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: tool.color,
+                      }}>
+                        <Icon size={24} />
+                      </div>
+                      <span style={{
+                        fontSize: 11,
+                        fontWeight: 700,
+                        padding: '4px 10px',
+                        borderRadius: 999,
+                        background: 'var(--bg-subtle)',
+                        color: 'var(--text-muted)',
+                        border: '1px solid var(--border)',
+                        marginLeft: 'auto',
+                      }}>
+                        {lang === 'hi' ? tool.tag_hi : tool.tag_en}
+                      </span>
+                    </div>
+
+                    <h3 style={{ color: 'var(--text)', fontSize: 18, fontWeight: 700, margin: '0 0 8px' }}>
+                      {lang === 'hi' ? tool.title_hi : tool.title_en}
+                    </h3>
+                    <p style={{ color: 'var(--text-muted)', fontSize: 13, lineHeight: 1.6, margin: '0 0 20px' }}>
+                      {lang === 'hi' ? tool.desc_hi : tool.desc_en}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => setActiveTool(tool)}
+                    style={{
+                      background: 'var(--bg-subtle)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 12,
+                      padding: '10px 16px',
+                      color: 'var(--text)',
+                      fontSize: 13,
+                      fontWeight: 600,
+                      cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: tool.color,
-                    }}>
-                      <Icon size={24} />
-                    </div>
-                    <span style={{
-                      fontSize: 11,
-                      fontWeight: 700,
-                      padding: '4px 10px',
-                      borderRadius: 999,
-                      background: 'rgba(255,255,255,0.07)',
-                      color: '#cbd5e1',
-                      border: '1px solid rgba(255,255,255,0.1)',
-                    }}>
-                      {lang === 'hi' ? tool.tag_hi : tool.tag_en}
-                    </span>
-                  </div>
-
-                  <h3 style={{ color: '#e2e8f0', fontSize: 18, fontWeight: 700, margin: '0 0 8px' }}>
-                    {lang === 'hi' ? tool.title_hi : tool.title_en}
-                  </h3>
-                  <p style={{ color: '#94a3b8', fontSize: 13, lineHeight: 1.6, margin: '0 0 20px' }}>
-                    {lang === 'hi' ? tool.desc_hi : tool.desc_en}
-                  </p>
+                      gap: 8,
+                      transition: 'all 0.2s',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = `${tool.color}20`;
+                      e.currentTarget.style.borderColor = tool.color;
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
+                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)';
+                    }}
+                  >
+                    <span>{lang === 'hi' ? 'टूल खोलें' : 'Launch Tool'}</span>
+                    <ArrowRight size={15} />
+                  </button>
                 </div>
-
-                <button
-                  onClick={() => setSelectedPreview(tool)}
-                  style={{
-                    background: 'rgba(255,255,255,0.05)',
-                    border: '1px solid rgba(255,255,255,0.12)',
-                    borderRadius: 12,
-                    padding: '10px 16px',
-                    color: '#e2e8f0',
-                    fontSize: 13,
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: 8,
-                    transition: 'all 0.2s',
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.background = `${tool.color}20`;
-                    e.currentTarget.style.borderColor = tool.color;
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)';
-                  }}
-                >
-                  <span>{ui('preview_tool', lang)}</span>
-                  <ArrowRight size={15} />
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Preview Modal */}
-      {selectedPreview && (
-        <div
-          onClick={() => setSelectedPreview(null)}
-          style={{
-            position: 'fixed',
-            inset: 0,
-            background: 'rgba(0,0,0,0.75)',
-            backdropFilter: 'blur(8px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: 24,
-            zIndex: 1000,
-          }}
-        >
-          <div
-            onClick={e => e.stopPropagation()}
-            style={{
-              background: '#131320',
-              border: '1px solid rgba(255,255,255,0.15)',
-              borderRadius: 24,
-              padding: 32,
-              maxWidth: 480,
-              width: '100%',
-              position: 'relative',
-              boxShadow: '0 25px 50px -12px rgba(0,0,0,0.7)',
-            }}
-          >
-            <div style={{
-              width: 54,
-              height: 54,
-              borderRadius: 16,
-              background: `${selectedPreview.color}20`,
-              color: selectedPreview.color,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: 16,
-            }}>
-              <selectedPreview.icon size={28} />
-            </div>
-
-            <h3 style={{ color: '#e2e8f0', fontSize: 20, fontWeight: 700, margin: '0 0 10px' }}>
-              {lang === 'hi' ? selectedPreview.title_hi : selectedPreview.title_en}
-            </h3>
-
-            <p style={{ color: '#94a3b8', fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
-              {lang === 'hi' ? selectedPreview.desc_hi : selectedPreview.desc_en}
-            </p>
-
-            <div style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.08)',
-              borderRadius: 12,
-              padding: 16,
-              marginBottom: 24,
-              display: 'flex',
-              alignItems: 'flex-start',
-              gap: 12,
-            }}>
-              <CheckCircle2 size={18} color="#22c55e" style={{ flexShrink: 0, marginTop: 2 }} />
-              <div style={{ color: '#cbd5e1', fontSize: 13, lineHeight: 1.5 }}>
-                {lang === 'hi'
-                  ? 'यह टूल चरण 2 में जारी किया जाएगा और पूर्ण रूप से बिना इंटरनेट (ऑफलाइन) काम करेगा।'
-                  : 'This tool is scheduled for Phase 2 release and will run completely offline inside your browser.'}
-              </div>
-            </div>
-
-            <button
-              onClick={() => setSelectedPreview(null)}
-              className="btn-primary"
-              style={{
-                width: '100%',
-                padding: '12px',
-                borderRadius: 12,
-                fontSize: 14,
-                fontWeight: 700,
-                cursor: 'pointer',
-              }}
-            >
-              {lang === 'hi' ? 'समझ गया' : 'Got it'}
-            </button>
+              );
+            })}
           </div>
-        </div>
-      )}
+        )}
+      </section>
     </main>
   );
 }

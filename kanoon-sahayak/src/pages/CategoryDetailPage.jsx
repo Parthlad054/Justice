@@ -25,10 +25,10 @@ export default function CategoryDetailPage() {
         <div style={{ fontSize: 40, marginBottom: 12 }}>
           {getCategoryEmoji(id)}
         </div>
-        <h1 style={{ fontWeight: 800, fontSize: 28, color: '#e2e8f0', marginBottom: 8 }}>
+        <h1 style={{ fontWeight: 800, fontSize: 28, color: 'var(--text)', marginBottom: 8 }}>
           {t(cat, 'title', lang)}
         </h1>
-        <p style={{ color: '#64748b', fontSize: 15 }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 15 }}>
           {t(cat, 'description', lang)}
         </p>
       </div>

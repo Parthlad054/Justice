@@ -19,10 +19,10 @@ export default function SearchResultsPage() {
       </div>
 
       {query && (
-        <p style={{ color: '#94a3b8', fontSize: 14, marginBottom: 24 }}>
-          {ui('search_results_for', lang)}: <strong style={{ color: '#e2e8f0' }}>"{query}"</strong>
+        <p style={{ color: 'var(--text-muted)', fontSize: 14, marginBottom: 24 }}>
+          {ui('search_results_for', lang)}: <strong style={{ color: 'var(--text)' }}>"{query}"</strong>
           {' · '}
-          <span style={{ color: '#64748b' }}>{results.length} {lang === 'en' ? 'results' : 'परिणाम'}</span>
+          <span style={{ color: 'var(--text-muted)' }}>{results.length} {lang === 'en' ? 'results' : 'परिणाम'}</span>
         </p>
       )}
 

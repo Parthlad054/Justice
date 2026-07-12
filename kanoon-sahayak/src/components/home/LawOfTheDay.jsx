@@ -45,11 +45,11 @@ export default function LawOfTheDay() {
         </span>
       </div>
 
-      <h2 style={{ fontWeight: 800, fontSize: 22, color: '#e2e8f0', marginBottom: 10, lineHeight: 1.3, position: 'relative' }}>
+      <h2 style={{ fontWeight: 800, fontSize: 22, color: 'var(--text)', marginBottom: 10, lineHeight: 1.3, position: 'relative' }}>
         {t(law, 'title', lang)}
       </h2>
 
-      <p style={{ color: '#94a3b8', fontSize: 14, lineHeight: 1.7, marginBottom: 20, position: 'relative' }}>
+      <p style={{ color: 'var(--text-muted)', fontSize: 14, lineHeight: 1.7, marginBottom: 20, position: 'relative' }}>
         {t(law, 'explanation', lang)}
       </p>
 

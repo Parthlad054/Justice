@@ -27,7 +27,7 @@ export default function Loader({ text = 'Loading...', size = 32 }) {
         }} />
         <Loader2 size={size} color="#f97316" style={{ animation: 'spin 1s linear infinite' }} />
       </div>
-      <p style={{ color: '#94a3b8', fontSize: 14, fontWeight: 500 }}>{text}</p>
+      <p style={{ color: 'var(--text-muted)', fontSize: 14, fontWeight: 500 }}>{text}</p>
       <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
     </div>
   );

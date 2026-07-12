@@ -13,7 +13,7 @@ export default function AboutPage() {
         <h1 className="gradient-text" style={{ fontWeight: 800, fontSize: 32, marginBottom: 14 }}>
           {lang === 'en' ? 'About Kanoon Sahayak' : 'कानून सहायक के बारे में'}
         </h1>
-        <p style={{ color: '#94a3b8', fontSize: 16, lineHeight: 1.8, maxWidth: 600, margin: '0 auto' }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 16, lineHeight: 1.8, maxWidth: 600, margin: '0 auto' }}>
           {lang === 'en'
             ? 'A free, bilingual legal awareness platform helping everyday Indian citizens understand their rights — with zero jargon.'
             : 'एक निःशुल्क, द्विभाषी कानूनी जागरूकता मंच जो आम भारतीय नागरिकों को शून्य जटिल शब्दावली के साथ उनके अधिकार समझने में मदद करता है।'}
@@ -29,8 +29,8 @@ export default function AboutPage() {
         ].map(card => (
           <div key={card.title} className="glass" style={{ padding: '24px', textAlign: 'center' }}>
             <div style={{ fontSize: 36, marginBottom: 12 }}>{card.icon}</div>
-            <h3 style={{ fontWeight: 700, color: '#e2e8f0', marginBottom: 8, fontSize: 16 }}>{card.title}</h3>
-            <p style={{ color: '#64748b', fontSize: 13, lineHeight: 1.6 }}>{card.desc}</p>
+            <h3 style={{ fontWeight: 700, color: 'var(--text)', marginBottom: 8, fontSize: 16 }}>{card.title}</h3>
+            <p style={{ color: 'var(--text-muted)', fontSize: 13, lineHeight: 1.6 }}>{card.desc}</p>
           </div>
         ))}
       </div>
@@ -39,10 +39,10 @@ export default function AboutPage() {
       <div className="disclaimer-bar" style={{ marginBottom: 40, borderRadius: 14 }}>
         <span style={{ fontSize: 20 }}>⚠️</span>
         <div>
-          <p style={{ fontWeight: 700, marginBottom: 6, fontSize: 14, color: '#fbbf24' }}>
+          <p style={{ fontWeight: 700, marginBottom: 6, fontSize: 14, color: '#d97706' }}>
             {lang === 'en' ? 'Important Disclaimer' : 'महत्वपूर्ण अस्वीकरण'}
           </p>
-          <p style={{ fontSize: 13, lineHeight: 1.7, color: '#d97706' }}>
+          <p style={{ fontSize: 13, lineHeight: 1.7, color: '#b45309' }}>
             {lang === 'en'
               ? '"Kanoon Sahayak provides general legal information in simple language to help you understand your rights. It is not a substitute for professional legal advice. For serious legal matters, please consult a licensed lawyer or contact your nearest District Legal Services Authority (DLSA) for free legal aid."'
               : '"कानून सहायक आपके अधिकारों को समझने में मदद करने के लिए सरल भाषा में सामान्य कानूनी जानकारी प्रदान करता है। यह पेशेवर कानूनी सलाह का विकल्प नहीं है। गंभीर कानूनी मामलों के लिए, कृपया एक लाइसेंस प्राप्त वकील से परामर्श करें या मुफ्त कानूनी सहायता के लिए अपने निकटतम जिला कानूनी सेवा प्राधिकरण (DLSA) से संपर्क करें।"'}
@@ -51,27 +51,28 @@ export default function AboutPage() {
       </div>
 
       {/* All helplines */}
-      <h2 style={{ fontWeight: 700, color: '#e2e8f0', fontSize: 20, marginBottom: 16 }}>
+      <h2 style={{ fontWeight: 700, color: 'var(--text)', fontSize: 20, marginBottom: 16 }}>
         {lang === 'en' ? '📞 All Emergency Helplines' : '📞 सभी आपातकालीन हेल्पलाइन'}
       </h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 12 }}>
         {helplines.helplines.map(h => (
           <a key={h.number} href={`tel:${h.number}`} style={{
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)',
+            background: 'var(--bg-card)', border: '1px solid var(--border)',
             borderRadius: 12, padding: '14px 16px', textDecoration: 'none',
             transition: 'background 0.2s',
+            boxShadow: 'var(--card-shadow)',
           }}
-            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.08)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.04)'}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-card-hover)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--bg-card)'}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <Phone size={14} color="#4ade80" />
-              <span style={{ color: '#cbd5e1', fontSize: 13, fontWeight: 500 }}>
+              <Phone size={14} color="#22c55e" />
+              <span style={{ color: 'var(--text)', fontSize: 13, fontWeight: 600 }}>
                 {lang === 'hi' ? h.name_hi : h.name_en}
               </span>
             </div>
-            <span style={{ color: '#4ade80', fontWeight: 700, fontSize: 15 }}>{h.number}</span>
+            <span style={{ color: '#22c55e', fontWeight: 700, fontSize: 15 }}>{h.number}</span>
           </a>
         ))}
       </div>

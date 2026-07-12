@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Share2, Copy, Check, MessageCircle } from 'lucide-react';
+import { Copy, Check, MessageCircle } from 'lucide-react';
 import { useLang } from '../../context/LanguageContext';
 import { shareLaw, whatsappShare } from '../../utils/shareUtils';
 import { ui } from '../../utils/translate';

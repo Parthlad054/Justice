@@ -24,11 +24,11 @@ export default function EmptyState({
       }}>
         {icon}
       </div>
-      <h3 style={{ color: '#e2e8f0', fontSize: 19, fontWeight: 700, margin: 0 }}>
+      <h3 style={{ color: 'var(--text)', fontSize: 19, fontWeight: 700, margin: 0 }}>
         {title}
       </h3>
       {subtitle && (
-        <p style={{ color: '#94a3b8', fontSize: 14, maxWidth: 360, margin: 0, lineHeight: 1.5 }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: 14, maxWidth: 360, margin: 0, lineHeight: 1.5 }}>
           {subtitle}
         </p>
       )}
