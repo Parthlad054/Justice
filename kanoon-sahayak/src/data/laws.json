@@ -29,6 +29,18 @@
         "parivahan.gov.in पर ऑनलाइन चालान जांचें और भुगतान करें",
         "गलत तरीके से जारी चालान को ट्रैफिक कोर्ट में चुनौती दे सकते हैं"
       ],
+      "escalation_en": [
+        "Step 1: Ask for official e-challan and pay online at parivahan.gov.in",
+        "Step 2: If overcharged, file complaint with Traffic Police helpline",
+        "Step 3: Dispute wrong challan at echallan.parivahan.gov.in → 'Dispute Challan'",
+        "Step 4: Approach Traffic Court for a formal hearing if unresolved"
+      ],
+      "escalation_hi": [
+        "चरण 1: आधिकारिक ई-चालान मांगें और parivahan.gov.in पर ऑनलाइन भरें",
+        "चरण 2: अधिक वसूली पर ट्रैफिक पुलिस हेल्पलाइन पर शिकायत करें",
+        "चरण 3: गलत चालान को echallan.parivahan.gov.in पर 'Dispute Challan' से चुनौती दें",
+        "चरण 4: हल न होने पर औपचारिक सुनवाई के लिए ट्रैफिक कोर्ट में जाएं"
+      ],
       "act_section": "Motor Vehicles Act, 1988 — Section 129",
       "penalty": "₹1,000 fine + 3 months license suspension (may vary by state)",
       "tags": ["helmet", "challan", "traffic", "two wheeler", "bike"]
@@ -61,6 +73,18 @@
         "'Dispute Challan' पर क्लिक करें या ट्रैफिक पुलिस हेल्पलाइन से संपर्क करें",
         "त्रुटि दिखाने वाले प्रमाण (RC, फोटो) जमा करें",
         "यदि आवश्यक हो तो वर्चुअल कोर्ट सुनवाई में उपस्थित हों"
+      ],
+      "escalation_en": [
+        "Step 1: Check challan on echallan.parivahan.gov.in and click 'Dispute Challan'",
+        "Step 2: Submit RC + photos as proof — challan may be cancelled online",
+        "Step 3: If rejected online, contact your district Traffic Police helpline",
+        "Step 4: Attend Virtual Traffic Court hearing — challan cancelled if error proved"
+      ],
+      "escalation_hi": [
+        "चरण 1: echallan.parivahan.gov.in पर चालान जांचें और 'Dispute Challan' पर क्लिक करें",
+        "चरण 2: RC + फोटो प्रमाण के रूप में जमा करें — चालान ऑनलाइन रद्द हो सकता है",
+        "चरण 3: ऑनलाइन अस्वीकृत होने पर जिला ट्रैफिक पुलिस हेल्पलाइन से संपर्क करें",
+        "चरण 4: वर्चुअल ट्रैफिक कोर्ट सुनवाई में उपस्थित हों — त्रुटि सिद्ध होने पर चालान रद्द"
       ],
       "act_section": "Motor Vehicles Act, 1988",
       "penalty": "N/A — cancellation if proven wrong",
@@ -95,6 +119,18 @@
         "किसी भी जुर्माने के लिए रसीद मांगें",
         "गलत तरीके से हिरासत में लेने पर तुरंत वकील या परिवार से संपर्क करें"
       ],
+      "escalation_en": [
+        "Step 1: Comply with breath analyser test — demand official receipt for fine",
+        "Step 2: If wrongly arrested, inform family and request a lawyer immediately",
+        "Step 3: Apply for bail at the nearest magistrate court",
+        "Step 4: If wrongfully charged, contest in Traffic/Sessions Court"
+      ],
+      "escalation_hi": [
+        "चरण 1: ब्रेथ एनालाइजर टेस्ट का पालन करें — जुर्माने के लिए आधिकारिक रसीद मांगें",
+        "चरण 2: गलत गिरफ्तारी पर परिवार को सूचित करें और तुरंत वकील मांगें",
+        "चरण 3: निकटतम मजिस्ट्रेट कोर्ट में जमानत के लिए आवेदन करें",
+        "चरण 4: गलत आरोप पर ट्रैफिक/सत्र न्यायालय में चुनौती दें"
+      ],
       "act_section": "Motor Vehicles Act, 1988 — Section 185",
       "penalty": "First offence: ₹10,000 fine or 6 months imprisonment. Repeat: ₹15,000 or 2 years",
       "tags": ["drunk driving", "DUI", "alcohol", "traffic challan", "arrest"]
@@ -128,6 +164,20 @@
         "30 दिनों में हल न होने पर consumerhelpline.gov.in या e-daakhil पोर्टल पर ऑनलाइन दर्ज करें",
         "₹5 लाख से कम के दावों के लिए कोई कोर्ट फीस नहीं"
       ],
+      "escalation_en": [
+        "Step 1: Complain directly to seller — give 7–30 days to resolve",
+        "Step 2: File complaint at consumerhelpline.gov.in or call 1800-11-4000",
+        "Step 3: File online at e-Daakhil portal (edaakhil.nic.in) — District Consumer Forum",
+        "Step 4: Appeal to State Consumer Commission if District Forum order is unsatisfactory",
+        "Step 5: Final appeal to National Consumer Commission"
+      ],
+      "escalation_hi": [
+        "चरण 1: विक्रेता को सीधे शिकायत करें — हल करने के लिए 7–30 दिन दें",
+        "चरण 2: consumerhelpline.gov.in पर या 1800-11-4000 पर शिकायत दर्ज करें",
+        "चरण 3: e-Daakhil पोर्टल (edaakhil.nic.in) — जिला उपभोक्ता फोरम में ऑनलाइन दर्ज करें",
+        "चरण 4: जिला फोरम का आदेश असंतोषजनक हो तो राज्य उपभोक्ता आयोग में अपील करें",
+        "चरण 5: अंतिम अपील राष्ट्रीय उपभोक्ता आयोग में"
+      ],
       "act_section": "Consumer Protection Act, 2019",
       "penalty": "Compensation as decided by Consumer Forum + possible punitive damages",
       "tags": ["refund", "defective product", "consumer complaint", "warranty", "e-daakhil"]
@@ -160,6 +210,18 @@
         "हर खरीद के लिए बिल मांगें",
         "अधिक वसूली पर consumerhelpline.gov.in पर रिपोर्ट करें या 1800-11-4000 पर कॉल करें",
         "आवश्यक वस्तुओं के लिए राज्य खाद्य एवं नागरिक आपूर्ति विभाग में शिकायत करें"
+      ],
+      "escalation_en": [
+        "Step 1: Refuse to pay above MRP — cite Legal Metrology Act to seller",
+        "Step 2: Report to consumerhelpline.gov.in or National Consumer Helpline 1800-11-4000",
+        "Step 3: File complaint at District Consumer Forum via e-Daakhil",
+        "Step 4: For essential commodities, report to State Food & Civil Supplies Dept."
+      ],
+      "escalation_hi": [
+        "चरण 1: MRP से अधिक देने से मना करें — विक्रेता को Legal Metrology Act बताएं",
+        "चरण 2: consumerhelpline.gov.in पर या 1800-11-4000 पर रिपोर्ट करें",
+        "चरण 3: e-Daakhil के माध्यम से जिला उपभोक्ता फोरम में शिकायत दर्ज करें",
+        "चरण 4: आवश्यक वस्तुओं के लिए राज्य खाद्य एवं नागरिक आपूर्ति विभाग को रिपोर्ट करें"
       ],
       "act_section": "Legal Metrology Act, 2009 / Consumer Protection Act, 2019",
       "penalty": "Fine up to ₹1 lakh for first offence, ₹3 lakh for repeat offences",
@@ -197,6 +259,20 @@
         "हस्ताक्षर से पहले एफआईआर पढ़कर सटीकता की पुष्टि करें",
         "एफआईआर नंबर सहित अपनी मुफ्त प्रति लें",
         "मना होने पर धारा 154(3) CrPC के तहत SP को लिखित शिकायत भेजें"
+      ],
+      "escalation_en": [
+        "Step 1: Visit nearest police station — FIR filing is free",
+        "Step 2: If police refuse, file Zero FIR at any other police station",
+        "Step 3: Write to Superintendent of Police (SP) under Section 154(3) CrPC",
+        "Step 4: File complaint online (state portals like UP, Maharashtra have online FIR)",
+        "Step 5: Approach the Judicial Magistrate directly under Section 156(3) CrPC"
+      ],
+      "escalation_hi": [
+        "चरण 1: निकटतम पुलिस स्टेशन जाएं — FIR दर्ज करना मुफ्त है",
+        "चरण 2: पुलिस मना करे तो किसी अन्य पुलिस स्टेशन पर जीरो FIR दर्ज करें",
+        "चरण 3: धारा 154(3) CrPC के तहत SP को लिखें",
+        "चरण 4: ऑनलाइन शिकायत दर्ज करें (UP, महाराष्ट्र जैसे राज्यों में ऑनलाइन FIR उपलब्ध)",
+        "चरण 5: धारा 156(3) CrPC के तहत सीधे न्यायिक मजिस्ट्रेट से संपर्क करें"
       ],
       "act_section": "Section 154, Code of Criminal Procedure (CrPC)",
       "penalty": "N/A — this is a right, not an offence",
@@ -237,6 +313,20 @@
         "वकील मांगें — NALSA के माध्यम से मुफ्त कानूनी सहायता उपलब्ध है",
         "बिना पढ़े या समझे किसी दस्तावेज़ पर हस्ताक्षर न करें"
       ],
+      "escalation_en": [
+        "Step 1: Demand reason for arrest and inform family immediately",
+        "Step 2: Request a lawyer — contact NALSA helpline 15100 for free legal aid",
+        "Step 3: Must be produced before a magistrate within 24 hours",
+        "Step 4: Apply for bail at magistrate court",
+        "Step 5: If wrongfully detained, file a Habeas Corpus petition in High Court"
+      ],
+      "escalation_hi": [
+        "चरण 1: गिरफ्तारी का कारण मांगें और तुरंत परिवार को सूचित करें",
+        "चरण 2: वकील मांगें — मुफ्त कानूनी सहायता के लिए NALSA 15100 पर संपर्क करें",
+        "चरण 3: 24 घंटे के भीतर मजिस्ट्रेट के सामने पेश होना चाहिए",
+        "चरण 4: मजिस्ट्रेट कोर्ट में जमानत के लिए आवेदन करें",
+        "चरण 5: गलत हिरासत पर उच्च न्यायालय में Habeas Corpus याचिका दाखिल करें"
+      ],
       "act_section": "Article 22, Constitution of India / Section 50, CrPC",
       "penalty": "N/A — these are fundamental rights",
       "tags": ["arrest", "fundamental rights", "police", "lawyer", "NALSA", "detention"]
@@ -271,6 +361,20 @@
         "निकटतम Protection Officer या NGO से संपर्क करें",
         "मजिस्ट्रेट की अदालत में घरेलू हिंसा अधिनियम के तहत शिकायत दर्ज करें",
         "साक्ष्य सुरक्षित रखें — संदेश, चिकित्सा रिपोर्ट, गवाह"
+      ],
+      "escalation_en": [
+        "Step 1: Call Women's Helpline 181 / Emergency 112 if in immediate danger",
+        "Step 2: Approach nearest Protection Officer (District Women & Child Department)",
+        "Step 3: File complaint with Magistrate Court under DV Act — get Protection Order",
+        "Step 4: Apply for residence order and monetary relief at Magistrate Court",
+        "Step 5: If order violated, file police complaint — violator can be imprisoned up to 1 year"
+      ],
+      "escalation_hi": [
+        "चरण 1: तत्काल खतरे पर महिला हेल्पलाइन 181 / आपातकाल 112 पर कॉल करें",
+        "चरण 2: निकटतम Protection Officer से संपर्क करें (जिला महिला एवं बाल विभाग)",
+        "चरण 3: DV Act के तहत मजिस्ट्रेट कोर्ट में शिकायत दर्ज करें — Protection Order प्राप्त करें",
+        "चरण 4: मजिस्ट्रेट कोर्ट में निवास आदेश और मौद्रिक राहत के लिए आवेदन करें",
+        "चरण 5: आदेश उल्लंघन पर पुलिस शिकायत दर्ज करें — उल्लंघनकर्ता को 1 साल तक कैद हो सकती है"
       ],
       "act_section": "Protection of Women from Domestic Violence Act, 2005",
       "penalty": "Breach of protection order: up to 1 year imprisonment + fine",
@@ -307,6 +411,20 @@
         "ICC न होने पर जिला स्तर पर Local Complaints Committee (LCC) में दर्ज करें",
         "नियोक्ता प्रतिशोध ले तो अलग पुलिस शिकायत दर्ज करें"
       ],
+      "escalation_en": [
+        "Step 1: Document the incident immediately with dates, times, witnesses",
+        "Step 2: File written complaint with ICC within 90 days of incident",
+        "Step 3: If no ICC, file with Local Complaints Committee (LCC) at district level",
+        "Step 4: If employer retaliates, file FIR + complaint with Labour Commissioner",
+        "Step 5: File petition in High Court if all else fails"
+      ],
+      "escalation_hi": [
+        "चरण 1: तुरंत तारीख, समय, गवाहों के साथ घटना दर्ज करें",
+        "चरण 2: घटना के 90 दिनों के भीतर ICC में लिखित शिकायत दर्ज करें",
+        "चरण 3: ICC न होने पर जिला स्तर पर LCC में दर्ज करें",
+        "चरण 4: नियोक्ता प्रतिशोध ले तो FIR दर्ज करें + श्रम आयुक्त को शिकायत करें",
+        "चरण 5: सब विफल हो तो उच्च न्यायालय में याचिका दाखिल करें"
+      ],
       "act_section": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act)",
       "penalty": "Employer: Fine up to ₹50,000. Repeat: cancellation of licence/registration",
       "tags": ["sexual harassment", "workplace", "POSH", "ICC", "women rights"]
@@ -339,6 +457,20 @@
         "cybercrime.gov.in पर ऑनलाइन रिपोर्ट करें",
         "लेनदेन/कार्ड ब्लॉक करने के लिए अपने बैंक को सूचित करें",
         "साक्ष्य के रूप में संदेश, UPI ID और लेनदेन ID के स्क्रीनशॉट रखें"
+      ],
+      "escalation_en": [
+        "Step 1: Call 1930 IMMEDIATELY — first hour is critical to freeze funds",
+        "Step 2: Call your bank's fraud helpline to block transaction",
+        "Step 3: File complaint at cybercrime.gov.in — save complaint number",
+        "Step 4: Visit nearest Cyber Cell with screenshots + transaction proof",
+        "Step 5: File FIR at local police station if Cyber Cell is unresponsive"
+      ],
+      "escalation_hi": [
+        "चरण 1: तुरंत 1930 पर कॉल करें — पैसे फ्रीज करने के लिए पहला घंटा महत्वपूर्ण है",
+        "चरण 2: लेनदेन ब्लॉक करने के लिए बैंक की फ्रॉड हेल्पलाइन पर कॉल करें",
+        "चरण 3: cybercrime.gov.in पर शिकायत दर्ज करें — शिकायत नंबर सहेजें",
+        "चरण 4: स्क्रीनशॉट + लेनदेन प्रमाण के साथ निकटतम साइबर सेल जाएं",
+        "चरण 5: साइबर सेल अनुत्तरदायी हो तो स्थानीय पुलिस स्टेशन में FIR दर्ज करें"
       ],
       "act_section": "Information Technology Act, 2000 — Section 66C/66D",
       "penalty": "Up to 3 years imprisonment + fine up to ₹1 lakh",
@@ -373,6 +505,20 @@
         "cybercrime.gov.in पर शिकायत दर्ज करें या 1930 पर कॉल करें",
         "गंभीर खतरों के लिए निकटतम साइबर सेल से संपर्क करें"
       ],
+      "escalation_en": [
+        "Step 1: Screenshot all abusive content (before blocking)",
+        "Step 2: Report the account to the platform — request content removal",
+        "Step 3: File complaint at cybercrime.gov.in or call 1930",
+        "Step 4: Visit Cyber Cell with all evidence for serious threats",
+        "Step 5: File FIR under IT Act + IPC 354D for stalking/threatening behaviour"
+      ],
+      "escalation_hi": [
+        "चरण 1: सभी आपत्तिजनक सामग्री का स्क्रीनशॉट लें (ब्लॉक करने से पहले)",
+        "चरण 2: प्लेटफॉर्म पर अकाउंट रिपोर्ट करें — सामग्री हटाने का अनुरोध करें",
+        "चरण 3: cybercrime.gov.in पर शिकायत दर्ज करें या 1930 पर कॉल करें",
+        "चरण 4: गंभीर खतरों के लिए सभी साक्ष्य के साथ साइबर सेल जाएं",
+        "चरण 5: IT Act + IPC 354D के तहत पीछा करने/धमकी देने पर FIR दर्ज करें"
+      ],
       "act_section": "IT Act, 2000 — Section 66E / IPC Section 354D (stalking)",
       "penalty": "Up to 3 years imprisonment + fine",
       "tags": ["cyberbullying", "harassment", "online abuse", "stalking", "social media"]
@@ -405,6 +551,20 @@
         "वेतन पर्ची, अनुबंध और संचार को प्रमाण के रूप में रखें",
         "स्थानीय श्रम आयुक्त के कार्यालय में शिकायत दर्ज करें",
         "हल न होने पर श्रम न्यायालय से संपर्क करें"
+      ],
+      "escalation_en": [
+        "Step 1: Send written email/WhatsApp reminder to employer",
+        "Step 2: File complaint with Labour Commissioner's office (bring pay slips + contract)",
+        "Step 3: Labour Commissioner mediates — employer ordered to pay with interest",
+        "Step 4: If no resolution, approach Labour Court / Industrial Tribunal",
+        "Step 5: Apply to civil court for recovery of dues as a civil debt"
+      ],
+      "escalation_hi": [
+        "चरण 1: नियोक्ता को लिखित ईमेल/WhatsApp अनुस्मारक भेजें",
+        "चरण 2: श्रम आयुक्त कार्यालय में शिकायत दर्ज करें (वेतन पर्ची + अनुबंध लाएं)",
+        "चरण 3: श्रम आयुक्त मध्यस्थता करते हैं — नियोक्ता को ब्याज सहित भुगतान का आदेश",
+        "चरण 4: हल न होने पर श्रम न्यायालय / औद्योगिक न्यायाधिकरण जाएं",
+        "चरण 5: नागरिक ऋण के रूप में बकाया वसूली के लिए सिविल कोर्ट में आवेदन करें"
       ],
       "act_section": "Payment of Wages Act, 1936",
       "penalty": "Fine on employer + directed payment with compensation",
@@ -441,6 +601,20 @@
         "कोई भी अवैतनिक वेतन, छुट्टी नकदीकरण और ग्रेच्युटी का दावा करें",
         "श्रम आयुक्त के कार्यालय या औद्योगिक न्यायाधिकरण में शिकायत दर्ज करें"
       ],
+      "escalation_en": [
+        "Step 1: Demand written termination letter with reasons",
+        "Step 2: Collect all dues — unpaid salary, leave encashment, gratuity",
+        "Step 3: File complaint with Labour Commissioner (bring all documents)",
+        "Step 4: Approach Industrial Tribunal / Labour Court for reinstatement or compensation",
+        "Step 5: Approach High Court if Tribunal order is not followed"
+      ],
+      "escalation_hi": [
+        "चरण 1: कारणों सहित लिखित बर्खास्तगी पत्र की मांग करें",
+        "चरण 2: सभी बकाया इकट्ठा करें — अवैतनिक वेतन, छुट्टी नकदीकरण, ग्रेच्युटी",
+        "चरण 3: श्रम आयुक्त में शिकायत दर्ज करें (सभी दस्तावेज लाएं)",
+        "चरण 4: पुनर्स्थापन या मुआवजे के लिए औद्योगिक न्यायाधिकरण / श्रम न्यायालय जाएं",
+        "चरण 5: न्यायाधिकरण के आदेश का पालन न हो तो उच्च न्यायालय जाएं"
+      ],
       "act_section": "Industrial Disputes Act, 1947 / Payment of Gratuity Act, 1972",
       "penalty": "Employer liable for back wages, reinstatement, or compensation",
       "tags": ["termination", "fired", "wrongful dismissal", "gratuity", "labour court"]
@@ -473,6 +647,20 @@
         "अंदर और बाहर जाने से पहले संपत्ति की स्थिति की फोटो/वीडियो लें",
         "जमा राशि की मांग करते हुए लिखित नोटिस भेजें",
         "नजरअंदाज करने पर किराया न्यायालय या उपभोक्ता फोरम में मामला दर्ज करें"
+      ],
+      "escalation_en": [
+        "Step 1: Send formal written notice to landlord demanding deposit (via WhatsApp/email)",
+        "Step 2: If no response in 15 days, file complaint with Rent Authority",
+        "Step 3: File complaint at Consumer Forum (treat as service deficiency)",
+        "Step 4: File civil suit in civil court for recovery of deposit with interest",
+        "Step 5: If amount is under ₹5 lakh, file at District Consumer Forum free of cost"
+      ],
+      "escalation_hi": [
+        "चरण 1: मकान मालिक को जमा की मांग करते हुए औपचारिक लिखित नोटिस भेजें (WhatsApp/ईमेल से)",
+        "चरण 2: 15 दिनों में कोई जवाब नहीं मिलने पर किराया प्राधिकरण में शिकायत दर्ज करें",
+        "चरण 3: उपभोक्ता फोरम में शिकायत दर्ज करें (सेवा की कमी के रूप में)",
+        "चरण 4: ब्याज सहित जमा वसूली के लिए सिविल कोर्ट में दीवानी मुकदमा दाखिल करें",
+        "चरण 5: ₹5 लाख से कम राशि पर जिला उपभोक्ता फोरम में मुफ्त दर्ज करें"
       ],
       "act_section": "Model Tenancy Act, 2021 (state-adopted) / Transfer of Property Act, 1882",
       "penalty": "Court can order refund with interest",
@@ -509,6 +697,20 @@
         "किराया न्यायालय / सिविल कोर्ट में शिकायत दर्ज करें",
         "अवैध बेदखली रोकने के लिए स्टे ऑर्डर के लिए आवेदन करें"
       ],
+      "escalation_en": [
+        "Step 1: Refuse to vacate — demand proper legal eviction notice",
+        "Step 2: Call police immediately if locks are changed or force is used",
+        "Step 3: File criminal complaint for trespass / illegal eviction",
+        "Step 4: File in Rent Court / Civil Court for stay order",
+        "Step 5: Claim damages in civil court for illegal eviction losses"
+      ],
+      "escalation_hi": [
+        "चरण 1: घर खाली करने से मना करें — उचित कानूनी बेदखली नोटिस की मांग करें",
+        "चरण 2: ताले बदले जाएं या बल प्रयोग हो तो तुरंत पुलिस बुलाएं",
+        "चरण 3: अतिक्रमण / अवैध बेदखली के लिए आपराधिक शिकायत दर्ज करें",
+        "चरण 4: स्टे ऑर्डर के लिए किराया न्यायालय / सिविल कोर्ट में दर्ज करें",
+        "चरण 5: अवैध बेदखली के नुकसान के लिए सिविल कोर्ट में हर्जाने का दावा करें"
+      ],
       "act_section": "Transfer of Property Act, 1882 / Rent Control Acts (state-specific)",
       "penalty": "Landlord liable for damages; criminal charges for forceful eviction",
       "tags": ["eviction", "illegal eviction", "landlord", "tenant", "rent court"]
@@ -539,6 +741,20 @@
         "धारा 125 CrPC या लागू व्यक्तिगत कानून के तहत आवेदन दाखिल करें",
         "दोनों पति-पत्नी का आय प्रमाण जमा करें",
         "पारिवारिक न्यायालय या कानूनी सहायता क्लिनिक से मदद लें (पात्र व्यक्तियों के लिए निःशुल्क)"
+      ],
+      "escalation_en": [
+        "Step 1: Consult a lawyer or NALSA (15100) for free legal aid guidance",
+        "Step 2: File application under Section 125 CrPC at Family Court",
+        "Step 3: Apply for interim maintenance during ongoing proceedings",
+        "Step 4: If ex-spouse doesn't pay ordered maintenance, file execution petition",
+        "Step 5: Non-payment of court-ordered maintenance → imprisonment up to 1 month"
+      ],
+      "escalation_hi": [
+        "चरण 1: मुफ्त कानूनी सहायता मार्गदर्शन के लिए वकील या NALSA (15100) से परामर्श करें",
+        "चरण 2: पारिवारिक न्यायालय में धारा 125 CrPC के तहत आवेदन दाखिल करें",
+        "चरण 3: चल रही कार्यवाही के दौरान अंतरिम भरण-पोषण के लिए आवेदन करें",
+        "चरण 4: पूर्व जीवनसाथी आदेशित भरण-पोषण न दे तो निष्पादन याचिका दाखिल करें",
+        "चरण 5: अदालत आदेशित भरण-पोषण न देना → 1 महीने तक कैद"
       ],
       "act_section": "Section 125, CrPC / Hindu Marriage Act, 1955 / Special Marriage Act, 1954",
       "penalty": "Non-payment can lead to imprisonment up to 1 month",

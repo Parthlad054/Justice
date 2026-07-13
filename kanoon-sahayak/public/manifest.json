@@ -1,12 +1,38 @@
 {
   "name": "Kanoon Sahayak — LawEasy India",
   "short_name": "Kanoon Sahayak",
-  "description": "Bilingual (Hindi + English) legal awareness app to help Indian citizens understand their rights.",
+  "description": "Bilingual (Hindi + English) legal awareness app to help Indian citizens understand their rights, know what to do, and take action.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0f0f1a",
-  "theme_color": "#0f0f1a",
+  "theme_color": "#f97316",
   "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["education", "legal", "government"],
+  "shortcuts": [
+    {
+      "name": "Daily Quiz",
+      "short_name": "Quiz",
+      "description": "Take today's daily law quiz",
+      "url": "/quiz",
+      "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Legal Tools",
+      "short_name": "Tools",
+      "description": "Rights card, complaint generator and more",
+      "url": "/tools",
+      "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Search Laws",
+      "short_name": "Search",
+      "description": "Search Indian laws and rights",
+      "url": "/search",
+      "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }]
+    }
+  ],
   "icons": [
     {
       "src": "/favicon.svg",

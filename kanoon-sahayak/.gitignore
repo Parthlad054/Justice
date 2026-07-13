@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Implementation plans
+implementation_plan.txt
+file.txt

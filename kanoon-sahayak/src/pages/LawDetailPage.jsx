@@ -4,6 +4,7 @@ import { useLang } from '../context/LanguageContext';
 import { t, ui } from '../utils/translate';
 import StepsList from '../components/law/StepsList';
 import ShareButton from '../components/law/ShareButton';
+import EscalationLadder from '../components/law/EscalationLadder';
 import { EmptyState } from '../components/common/Common';
 import laws from '../data/laws.json';
 import categories from '../data/categories.json';
@@ -83,6 +84,9 @@ export default function LawDetailPage() {
       <Section title={ui('what_to_do', lang)} icon={<Scale size={18} color="#f97316" />} style={{ marginBottom: 20 }}>
         <StepsList steps={law.what_to_do} stepsHi={law.what_to_do_hi} />
       </Section>
+
+      {/* Escalation Ladder */}
+      <EscalationLadder law={law} />
 
       {/* Act/Penalty */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16, marginBottom: 24 }}>

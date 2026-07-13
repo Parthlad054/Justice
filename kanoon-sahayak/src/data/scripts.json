@@ -1,0 +1,169 @@
+{
+  "scripts": [
+    {
+      "id": "script-001",
+      "category": "traffic",
+      "situation_en": "Traffic police asks you to pay cash for a challan",
+      "situation_hi": "ट्रैफिक पुलिस आपसे चालान के लिए नकद मांगे",
+      "script_en": "\"Sir/Ma'am, I understand I may have violated a rule. However, I would like to request an official e-challan so I can pay it online at parivahan.gov.in. Under the Motor Vehicles Act, I am entitled to a proper receipt. Can you please issue the e-challan?\"",
+      "script_hi": "\"सर/मैडम, मैं समझता/समझती हूं कि मैंने शायद नियम तोड़ा है। लेकिन मैं आधिकारिक ई-चालान के लिए अनुरोध करना चाहता/चाहती हूं ताकि parivahan.gov.in पर ऑनलाइन भुगतान कर सकूं। मोटर वाहन अधिनियम के तहत मुझे उचित रसीद का अधिकार है। क्या आप कृपया ई-चालान जारी कर सकते हैं?\"",
+      "tip_en": "Stay calm and polite. Note the officer's name and badge number. You can pay challans online at parivahan.gov.in.",
+      "tip_hi": "शांत और विनम्र रहें। अधिकारी का नाम और बैज नंबर नोट करें। चालान parivahan.gov.in पर ऑनलाइन भरें।",
+      "tags": ["traffic", "challan", "bribe", "police"]
+    },
+    {
+      "id": "script-002",
+      "category": "traffic",
+      "situation_en": "Police stops you and asks for your ID without reason",
+      "situation_hi": "पुलिस बिना कारण आपको रोककर ID मांगे",
+      "script_en": "\"Certainly, Officer. May I ask the reason you are stopping me? I am happy to cooperate fully, but I would also like to know your name and badge number for my records. Here is my licence and RC.\"",
+      "script_hi": "\"बिल्कुल, अधिकारी जी। क्या मैं पूछ सकता/सकती हूं कि आपने मुझे क्यों रोका? मैं पूरी तरह सहयोग करने के लिए तैयार हूं, लेकिन मैं अपने रिकॉर्ड के लिए आपका नाम और बैज नंबर भी जानना चाहूंगा/चाहूंगी। यह रहा मेरा लाइसेंस और RC।\"",
+      "tip_en": "You have the right to know why you are being stopped. Always carry your licence, RC, and insurance documents.",
+      "tip_hi": "आपको यह जानने का अधिकार है कि आपको क्यों रोका जा रहा है। हमेशा लाइसेंस, RC और बीमा दस्तावेज साथ रखें।",
+      "tags": ["traffic", "police", "rights", "identity check"]
+    },
+    {
+      "id": "script-003",
+      "category": "consumer",
+      "situation_en": "Shopkeeper refuses to give you a bill/receipt",
+      "situation_hi": "दुकानदार बिल/रसीद देने से मना करे",
+      "script_en": "\"Excuse me, under the Consumer Protection Act, 2019, I have the right to a bill for every purchase. I need this for warranty purposes and as proof of purchase. If you don't provide a bill, I may need to report this to the Consumer Helpline at 1800-11-4000.\"",
+      "script_hi": "\"माफ करें, उपभोक्ता संरक्षण अधिनियम, 2019 के तहत मुझे हर खरीद के लिए बिल पाने का अधिकार है। मुझे यह वारंटी और खरीद प्रमाण के लिए चाहिए। यदि आप बिल नहीं देते, तो मुझे 1800-11-4000 पर उपभोक्ता हेल्पलाइन को सूचित करना पड़ सकता है।\"",
+      "tip_en": "Always insist on a bill. Without a bill, it is difficult to file a warranty claim or consumer complaint.",
+      "tip_hi": "हमेशा बिल पर जोर दें। बिल के बिना वारंटी दावा या उपभोक्ता शिकायत दर्ज करना मुश्किल होता है।",
+      "tags": ["consumer", "bill", "receipt", "shopkeeper"]
+    },
+    {
+      "id": "script-004",
+      "category": "consumer",
+      "situation_en": "Seller refuses to give refund for defective product",
+      "situation_hi": "विक्रेता खराब सामान का रिफंड देने से मना करे",
+      "script_en": "\"I purchased this product from your store on [date] — here is my bill. The product is defective as [describe defect]. Under the Consumer Protection Act, 2019, I am entitled to a refund, replacement, or repair. I am giving you 7 days to resolve this. If not, I will file a complaint at consumerhelpline.gov.in and the District Consumer Forum.\"",
+      "script_hi": "\"मैंने यह उत्पाद [तारीख] को आपकी दुकान से खरीदा था — यह रहा मेरा बिल। उत्पाद में [दोष बताएं] के कारण खराबी है। उपभोक्ता संरक्षण अधिनियम, 2019 के तहत मुझे रिफंड, बदलाव या मरम्मत का अधिकार है। मैं आपको इसे हल करने के लिए 7 दिन दे रहा/रही हूं। नहीं होने पर consumerhelpline.gov.in और जिला उपभोक्ता फोरम में शिकायत दर्ज करूंगा/करूंगी।\"",
+      "tip_en": "Always have your bill ready. Send this as a formal written notice via WhatsApp/email to create a paper trail.",
+      "tip_hi": "बिल हमेशा तैयार रखें। दस्तावेजी साक्ष्य के लिए इसे WhatsApp/ईमेल से औपचारिक लिखित नोटिस के रूप में भेजें।",
+      "tags": ["consumer", "refund", "defective product", "complaint"]
+    },
+    {
+      "id": "script-005",
+      "category": "police",
+      "situation_en": "Police refuses to file your FIR",
+      "situation_hi": "पुलिस आपकी FIR दर्ज करने से मना करे",
+      "script_en": "\"Sir, I am reporting a cognizable offence. Under Section 154 of the CrPC, you are legally obligated to register my FIR. If you refuse, I will approach the Superintendent of Police under Section 154(3) and file my complaint in writing. I would prefer to resolve this here. Can you please register my FIR?\"",
+      "script_hi": "\"सर, मैं एक संज्ञेय अपराध की रिपोर्ट कर रहा/रही हूं। CrPC की धारा 154 के तहत आप मेरी FIR दर्ज करने के लिए कानूनी रूप से बाध्य हैं। यदि आप मना करते हैं, तो मैं धारा 154(3) के तहत SP से संपर्क करूंगा/करूंगी और लिखित शिकायत दर्ज करूंगा/करूंगी। मैं इसे यहीं हल करना पसंद करूंगा/करूंगी। कृपया मेरी FIR दर्ज करें।\"",
+      "tip_en": "Remain calm and firm. If still refused, contact the SP's office, approach the magistrate, or call the police complaint authority in your state.",
+      "tip_hi": "शांत और दृढ़ रहें। फिर भी मना होने पर SP कार्यालय से संपर्क करें, मजिस्ट्रेट से मिलें, या अपने राज्य की पुलिस शिकायत प्राधिकरण पर कॉल करें।",
+      "tags": ["police", "FIR", "CrPC", "rights"]
+    },
+    {
+      "id": "script-006",
+      "category": "police",
+      "situation_en": "You are being questioned by police as a suspect",
+      "situation_hi": "पुलिस आपसे संदिग्ध के रूप में पूछताछ करे",
+      "script_en": "\"I understand you have questions, and I want to cooperate. However, I would like to have my lawyer present before answering any questions. Under Article 20(3) of the Constitution, I cannot be compelled to be a witness against myself. Please allow me to contact my lawyer.\"",
+      "script_hi": "\"मैं समझता/समझती हूं कि आपके सवाल हैं, और मैं सहयोग करना चाहता/चाहती हूं। लेकिन मैं कोई भी सवाल का जवाब देने से पहले अपने वकील को मौजूद रखना चाहूंगा/चाहूंगी। संविधान के अनुच्छेद 20(3) के तहत मुझे खुद के खिलाफ गवाह बनने के लिए बाध्य नहीं किया जा सकता। कृपया मुझे अपने वकील से संपर्क करने दें।\"",
+      "tip_en": "You have the right to remain silent and to have legal representation. Do not sign any document without reading it or consulting a lawyer.",
+      "tip_hi": "आपको चुप रहने और कानूनी प्रतिनिधित्व का अधिकार है। बिना पढ़े या वकील से सलाह किए किसी दस्तावेज़ पर हस्ताक्षर न करें।",
+      "tags": ["police", "questioning", "rights", "lawyer", "self-incrimination"]
+    },
+    {
+      "id": "script-007",
+      "category": "employment",
+      "situation_en": "Your employer delays or withholds your salary",
+      "situation_hi": "नियोक्ता वेतन में देरी करे या रोक ले",
+      "script_en": "\"Dear [Manager/HR], I am writing to formally remind you that my salary for [month] is due on [date] as per the Payment of Wages Act, 1936 and our employment contract. Payment delayed beyond the 7th of the next month is a violation of labour law. I request you to process the payment within [X] days to avoid a formal complaint with the Labour Commissioner.\"",
+      "script_hi": "\"प्रिय [प्रबंधक/HR], मैं औपचारिक रूप से यह याद दिलाने के लिए लिख रहा/रही हूं कि वेतन भुगतान अधिनियम, 1936 और हमारे रोजगार अनुबंध के अनुसार [महीने] का मेरा वेतन [तारीख] को देय है। अगले महीने की 7 तारीख से देरी श्रम कानून का उल्लंघन है। मैं अनुरोध करता/करती हूं कि श्रम आयुक्त के पास औपचारिक शिकायत से बचने के लिए [X] दिनों में भुगतान करें।\"",
+      "tip_en": "Send this via email or WhatsApp to create a written record. Save your salary slips and bank statements as proof.",
+      "tip_hi": "लिखित रिकॉर्ड बनाने के लिए इसे ईमेल या WhatsApp से भेजें। अपनी वेतन पर्ची और बैंक विवरण साक्ष्य के रूप में सहेजें।",
+      "tags": ["employment", "salary", "wages", "labour rights"]
+    },
+    {
+      "id": "script-008",
+      "category": "rent-property",
+      "situation_en": "Landlord threatens to evict you without notice",
+      "situation_hi": "मकान मालिक बिना नोटिस के बेदखल करने की धमकी दे",
+      "script_en": "\"I understand there may be a dispute, but under the Transfer of Property Act and applicable Rent Control Laws, you cannot evict me without a proper legal notice and court order. Any forceful eviction — changing locks, removing my belongings — is illegal. I am prepared to resolve this through proper legal channels. Please serve me a formal notice if you wish to proceed.\"",
+      "script_hi": "\"मैं समझता/समझती हूं कि विवाद हो सकता है, लेकिन Transfer of Property Act और लागू Rent Control Laws के तहत आप उचित कानूनी नोटिस और अदालत के आदेश के बिना मुझे नहीं निकाल सकते। कोई भी जबरदस्ती बेदखली — ताले बदलना, मेरा सामान हटाना — गैरकानूनी है। मैं उचित कानूनी माध्यमों से इसे हल करने के लिए तैयार हूं। यदि आप आगे बढ़ना चाहते हैं तो कृपया मुझे औपचारिक नोटिस दें।\"",
+      "tip_en": "Know your rights. Keep a copy of your rent agreement handy. If locks are changed, call police immediately.",
+      "tip_hi": "अपने अधिकार जानें। किराया समझौते की प्रति पास रखें। ताले बदले जाएं तो तुरंत पुलिस बुलाएं।",
+      "tags": ["rent", "eviction", "landlord", "tenant rights"]
+    },
+    {
+      "id": "script-009",
+      "category": "rent-property",
+      "situation_en": "Landlord refuses to return your security deposit",
+      "situation_hi": "मकान मालिक सिक्योरिटी डिपॉजिट वापस करने से मना करे",
+      "script_en": "\"As per our rent agreement, I vacated the property on [date] and the premises were in good condition. I am formally requesting the return of my security deposit of ₹[amount]. As per the Model Tenancy Act, any deductions must be itemized and justified. If I do not receive the deposit or a detailed deduction statement within 15 days, I will approach the Rent Authority/Consumer Forum.\"",
+      "script_hi": "\"हमारे किराया समझौते के अनुसार, मैंने [तारीख] को संपत्ति खाली की और परिसर अच्छी स्थिति में था। मैं औपचारिक रूप से ₹[राशि] की सिक्योरिटी डिपॉजिट वापस करने का अनुरोध कर रहा/रही हूं। Model Tenancy Act के अनुसार किसी भी कटौती को मदवार और न्यायसंगत होना चाहिए। 15 दिनों में जमा या विस्तृत कटौती विवरण न मिलने पर मैं किराया प्राधिकरण/उपभोक्ता फोरम से संपर्क करूंगा/करूंगी।\"",
+      "tip_en": "Document the property's condition with photos before leaving. Send this notice via registered post or WhatsApp for proof.",
+      "tip_hi": "जाने से पहले संपत्ति की स्थिति की फोटो से दस्तावेज बनाएं। सबूत के लिए इस नोटिस को रजिस्टर्ड डाक या WhatsApp से भेजें।",
+      "tags": ["rent", "security deposit", "landlord", "deposit refund"]
+    },
+    {
+      "id": "script-010",
+      "category": "cyber-crime",
+      "situation_en": "You receive a suspicious call claiming to be from your bank",
+      "situation_hi": "आपको अपने बैंक का होने का दावा करने वाली संदिग्ध कॉल आए",
+      "script_en": "\"I need to verify this call before sharing any information. Please give me your employee ID and department. I will call the official customer care number on the back of my card to confirm. Genuine bank employees will never ask for your OTP, CVV, or full card number over the phone.\"",
+      "script_hi": "\"कोई भी जानकारी साझा करने से पहले मुझे इस कॉल को सत्यापित करना होगा। कृपया अपनी कर्मचारी ID और विभाग बताएं। मैं अपने कार्ड के पीछे के आधिकारिक कस्टमर केयर नंबर पर कॉल करके पुष्टि करूंगा/करूंगी। असली बैंक कर्मचारी फोन पर कभी OTP, CVV या पूरा कार्ड नंबर नहीं मांगते।\"",
+      "tip_en": "Hang up and call your bank's official number. Never share OTP, passwords, or full card details on any call.",
+      "tip_hi": "कॉल काटें और अपने बैंक के आधिकारिक नंबर पर कॉल करें। किसी भी कॉल पर OTP, पासवर्ड या पूरा कार्ड विवरण कभी न बताएं।",
+      "tags": ["cyber crime", "bank fraud", "phishing", "OTP scam"]
+    },
+    {
+      "id": "script-011",
+      "category": "consumer",
+      "situation_en": "Hotel or restaurant charges more than menu price / adds hidden service charge",
+      "situation_hi": "होटल या रेस्तरां मेनू मूल्य से अधिक या छिपा हुआ सेवा शुल्क लगाए",
+      "script_en": "\"I see a service charge of [X]% has been added to my bill. I would like to clarify that as per the Department of Consumer Affairs guidelines, service charge is voluntary and cannot be mandatory. I am happy to pay the food and GST amount, but I am opting out of the service charge. Can you please revise the bill?\"",
+      "script_hi": "\"मैं देख रहा/रही हूं कि मेरे बिल में [X]% सेवा शुल्क जोड़ा गया है। मैं स्पष्ट करना चाहूंगा/चाहूंगी कि उपभोक्ता मामले विभाग के दिशानिर्देशों के अनुसार सेवा शुल्क स्वैच्छिक है और अनिवार्य नहीं हो सकता। मैं खाने और GST का भुगतान करने में खुश हूं, लेकिन सेवा शुल्क से बाहर निकल रहा/रही हूं। क्या आप कृपया बिल को संशोधित कर सकते हैं?\"",
+      "tip_en": "The government has ruled that service charges in restaurants are not mandatory. You can refuse to pay it.",
+      "tip_hi": "सरकार ने निर्णय दिया है कि रेस्तरां में सेवा शुल्क अनिवार्य नहीं है। आप इसे देने से मना कर सकते हैं।",
+      "tags": ["consumer", "restaurant", "service charge", "hotel", "billing"]
+    },
+    {
+      "id": "script-012",
+      "category": "employment",
+      "situation_en": "Employer asks you to work overtime without extra pay",
+      "situation_hi": "नियोक्ता बिना अतिरिक्त वेतन के ओवरटाइम करने को कहे",
+      "script_en": "\"I am committed to completing the work, but I wanted to flag that under the Factories Act and relevant labour laws, overtime work entitles me to double the regular wages. I am happy to work overtime with proper overtime compensation. Can we formalize this arrangement?\"",
+      "script_hi": "\"मैं काम पूरा करने के लिए प्रतिबद्ध हूं, लेकिन मैं बताना चाहता/चाहती था/थी कि Factories Act और संबंधित श्रम कानूनों के तहत ओवरटाइम काम के लिए मुझे दोगुना नियमित वेतन मिलना चाहिए। मैं उचित ओवरटाइम मुआवजे के साथ काम करने में खुश हूं। क्या हम इस व्यवस्था को औपचारिक कर सकते हैं?\"",
+      "tip_en": "Keep records of overtime hours worked. Overtime without extra pay can be reported to the Labour Commissioner.",
+      "tip_hi": "ओवरटाइम घंटों का रिकॉर्ड रखें। बिना अतिरिक्त वेतन के ओवरटाइम की श्रम आयुक्त को रिपोर्ट की जा सकती है।",
+      "tags": ["employment", "overtime", "labour rights", "wages"]
+    },
+    {
+      "id": "script-013",
+      "category": "traffic",
+      "situation_en": "Police officer verbally threatens or misbehaves during a traffic stop",
+      "situation_hi": "ट्रैफिक स्टॉप के दौरान पुलिस अधिकारी मौखिक रूप से धमकाए या दुर्व्यवहार करे",
+      "script_en": "\"Officer, I request you to maintain professional conduct. I am complying with all your requests. I would like to note your name and badge number. If this behaviour continues, I will file a complaint with the Police Complaint Authority. I will cooperate fully, but I also expect to be treated respectfully.\"",
+      "script_hi": "\"अधिकारी जी, मैं आपसे पेशेवर आचरण बनाए रखने का अनुरोध करता/करती हूं। मैं आपके सभी अनुरोधों का पालन कर रहा/रही हूं। मैं आपका नाम और बैज नंबर नोट करना चाहूंगा/चाहूंगी। यदि यह व्यवहार जारी रहा, तो मैं पुलिस शिकायत प्राधिकरण में शिकायत दर्ज करूंगा/करूंगी। मैं पूरा सहयोग करूंगा/करूंगी, लेकिन सम्मानजनक व्यवहार की भी उम्मीद करता/करती हूं।\"",
+      "tip_en": "Stay calm and do not escalate. Record the incident if safe to do so. Report misconduct to the SP or State Human Rights Commission.",
+      "tip_hi": "शांत रहें और स्थिति को न बिगाड़ें। सुरक्षित हो तो घटना रिकॉर्ड करें। दुर्व्यवहार की SP या राज्य मानवाधिकार आयोग को रिपोर्ट करें।",
+      "tags": ["police", "traffic", "misconduct", "rights", "complaint"]
+    },
+    {
+      "id": "script-014",
+      "category": "women-safety",
+      "situation_en": "Experiencing harassment at the workplace",
+      "situation_hi": "कार्यस्थल पर उत्पीड़न का सामना करना",
+      "script_en": "\"I need to formally inform you that the behaviour/comments on [date] constituted sexual harassment under the POSH Act, 2013. I am documenting this incident and may file a formal complaint with the Internal Complaints Committee if the behaviour continues or is not addressed. I expect a professional and safe work environment.\"",
+      "script_hi": "\"मुझे आपको औपचारिक रूप से सूचित करना है कि [तारीख] को व्यवहार/टिप्पणियां POSH Act, 2013 के तहत यौन उत्पीड़न का गठन करती हैं। मैं इस घटना का दस्तावेजीकरण कर रहा/रही हूं और यदि व्यवहार जारी रहा या संबोधित नहीं किया गया तो ICC में औपचारिक शिकायत दर्ज कर सकता/सकती हूं। मैं पेशेवर और सुरक्षित कार्य वातावरण की उम्मीद करता/करती हूं।\"",
+      "tip_en": "Document all incidents with exact dates and times. Share this in writing via email/WhatsApp for a record trail before approaching ICC.",
+      "tip_hi": "सभी घटनाओं को सटीक तारीख और समय के साथ दर्ज करें। ICC से संपर्क करने से पहले रिकॉर्ड के लिए इसे ईमेल/WhatsApp से लिखित रूप में साझा करें।",
+      "tags": ["women safety", "workplace", "POSH", "harassment", "ICC"]
+    },
+    {
+      "id": "script-015",
+      "category": "cyber-crime",
+      "situation_en": "Someone is blackmailing you using a morphed or private photo online",
+      "situation_hi": "कोई ऑनलाइन बदली या निजी फोटो से आपको ब्लैकमेल करे",
+      "script_en": "\"Do not panic, and do not pay any amount demanded. Take screenshots of all messages as evidence. Block the person. Report the account to the platform. File a complaint at cybercrime.gov.in or call 1930. This is punishable under Section 66E of the IT Act. You are the victim — your identity will be protected.\"",
+      "script_hi": "\"घबराएं नहीं, और मांगी गई कोई भी राशि न दें। सभी संदेशों के स्क्रीनशॉट साक्ष्य के रूप में लें। व्यक्ति को ब्लॉक करें। प्लेटफॉर्म पर अकाउंट रिपोर्ट करें। cybercrime.gov.in पर शिकायत दर्ज करें या 1930 पर कॉल करें। यह IT Act की धारा 66E के तहत दंडनीय है। आप पीड़ित हैं — आपकी पहचान सुरक्षित रखी जाएगी।\"",
+      "tip_en": "Never pay the blackmailer — it only encourages further demands. Your identity is protected when reporting sensitive cyber crimes.",
+      "tip_hi": "ब्लैकमेलर को कभी भुगतान न करें — इससे और मांगें बढ़ती हैं। संवेदनशील साइबर अपराध रिपोर्ट करते समय आपकी पहचान सुरक्षित रहती है।",
+      "tags": ["cyber crime", "blackmail", "morphed photo", "harassment", "IT Act"]
+    }
+  ]
+}

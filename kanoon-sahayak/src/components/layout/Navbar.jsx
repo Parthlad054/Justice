@@ -15,6 +15,7 @@ export default function Navbar() {
     { to: '/', label: ui('home', lang) },
     { to: '/categories', label: ui('categories', lang) },
     { to: '/tools', label: ui('tools', lang) },
+    { to: '/quiz', label: ui('quiz', lang), badge: '🔥' },
     { to: '/faq', label: ui('faq', lang) },
     { to: '/about', label: ui('about', lang) },
   ];
@@ -51,8 +52,12 @@ export default function Navbar() {
               to={link.to}
               end={link.to === '/'}
               className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}
             >
               {link.label}
+              {link.badge && (
+                <span style={{ fontSize: 12, lineHeight: 1 }}>{link.badge}</span>
+              )}
             </NavLink>
           ))}
         </div>
@@ -111,9 +116,10 @@ export default function Navbar() {
               end={link.to === '/'}
               className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
               onClick={() => setMenuOpen(false)}
-              style={{ display: 'block', padding: '10px 16px' }}
+              style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '10px 16px' }}
             >
               {link.label}
+              {link.badge && <span style={{ fontSize: 13 }}>{link.badge}</span>}
             </NavLink>
           ))}
         </div>

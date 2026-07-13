@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
   PhoneCall, Shield, HeartHandshake, ShieldAlert, Users, User,
   ShoppingCart, Scale, Stethoscope, Flame, Search, FileText,
-  Calculator, Award, Sparkles, ArrowRight, CheckCircle2, MapPin, X
+  Calculator, Award, Sparkles, ArrowRight, CheckCircle2, MapPin, X, MessageSquare, Zap
 } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t, ui } from '../utils/translate';
@@ -11,6 +11,7 @@ import RightsCardGenerator from '../components/tools/RightsCardGenerator';
 import ComplaintGenerator from '../components/tools/ComplaintGenerator';
 import FineCalculator from '../components/tools/FineCalculator';
 import AuthorityFinder from '../components/tools/AuthorityFinder';
+import WhatToSayScripts from '../components/tools/WhatToSayScripts';
 
 const ICON_MAP = {
   Shield: Shield,
@@ -85,6 +86,18 @@ const EMPOWERMENT_TOOLS = [
     tag_en: 'Live Interactive Tool',
     tag_hi: 'सक्रिय टूल',
     component: AuthorityFinder,
+  },
+  {
+    id: 'what-to-say',
+    title_en: '"What To Say" Scripts',
+    title_hi: '"क्या कहें" स्क्रिप्ट',
+    desc_en: 'Polite, legally-informed scripts for common confrontations — traffic stops, refund disputes, FIR refusals & more.',
+    desc_hi: 'ट्रैफिक रुकावट, रिफंड विवाद, FIR से इनकार जैसी सामान्य विवाद स्थितियों के लिए विनम्र, कानूनी स्क्रिप्ट।',
+    icon: MessageSquare,
+    color: '#14b8a6',
+    tag_en: 'Live Interactive Tool',
+    tag_hi: 'सक्रिय टूल',
+    component: WhatToSayScripts,
   },
 ];
 

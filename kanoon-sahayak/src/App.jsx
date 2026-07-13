@@ -11,6 +11,7 @@ import SearchResultsPage from './pages/SearchResultsPage';
 import FAQPage from './pages/FAQPage';
 import AboutPage from './pages/AboutPage';
 import ToolsPage from './pages/ToolsPage';
+import QuizPage from './pages/QuizPage';
 import { EmptyState } from './components/common/Common';
 
 function NotFoundPage() {
@@ -35,6 +36,7 @@ export default function App() {
                 <Route path="/category/:id" element={<CategoryDetailPage />} />
                 <Route path="/law/:id" element={<LawDetailPage />} />
                 <Route path="/tools" element={<ToolsPage />} />
+                <Route path="/quiz" element={<QuizPage />} />
                 <Route path="/search" element={<SearchResultsPage />} />
                 <Route path="/faq" element={<FAQPage />} />
                 <Route path="/about" element={<AboutPage />} />
